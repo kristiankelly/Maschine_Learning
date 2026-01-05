@@ -1,0 +1,20 @@
+PWD c:\Ines\Dokumente\Uni_Wien\3_Semester\Maschinelles Lernen\Abgabe\Maschine_Learning\Ines
+INPUT C:\Users\inesv\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Ines\Dokumente\Uni_Wien\3_Semester\Maschinelles Lernen\Abgabe\Maschine_Learning\Ines\Ines.tex
+OUTPUT Ines.log
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\Ines.aux
+INPUT .\Ines.aux
+INPUT Ines.aux
+OUTPUT Ines.aux
+OUTPUT Ines.pdf
+INPUT C:\Users\inesv\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT Ines.aux
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\inesv\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
