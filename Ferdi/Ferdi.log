@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  8 JAN 2026 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  12 JAN 2026 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,9 +645,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[1
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 19.
+(C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 19.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 19.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 19.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 19.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
 
-{C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] (Ferdi.aux)
+{C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] (Ferdi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -659,17 +688,17 @@ Package logreq Info: Writing requests to 'Ferdi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19455 strings out of 467871
- 341109 string characters out of 5418377
- 1314610 words of memory out of 5000000
- 48139 multiletter control sequences out of 15000+600000
- 637082 words of font info for 49 fonts, out of 8000000 for 9000
+ 19606 strings out of 467871
+ 344133 string characters out of 5418377
+ 1318610 words of memory out of 5000000
+ 48233 multiletter control sequences out of 15000+600000
+ 647176 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,5n,70p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-Output written on Ferdi.pdf (1 page, 59848 bytes).
+<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb>
+Output written on Ferdi.pdf (1 page, 95301 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
- 6185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10281 words of extra memory for PDF output out of 12000 (max. 10000000)
 
