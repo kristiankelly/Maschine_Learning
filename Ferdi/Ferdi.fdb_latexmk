@@ -1,15 +1,16 @@
 # Fdb version 4
-["biber Ferdi"] 1767887368.00363 "Ferdi.bcf" "Ferdi.bbl" "Ferdi" 1768251200.45986 0
-  "Ferdi.bcf" 1768251200 133445 0a74b77096e8b55478ef103645b7c5a2 "pdflatex"
+["biber Ferdi"] 1767887368.00363 "Ferdi.bcf" "Ferdi.bbl" "Ferdi" 1770918975.6915 0
+  "Ferdi.bcf" 1770918975 133445 0a74b77096e8b55478ef103645b7c5a2 "pdflatex"
   (generated)
   "Ferdi.bbl"
   "Ferdi.blg"
   (rewritten before read)
-["pdflatex"] 1768251197.14663 "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" "Ferdi.pdf" "Ferdi" 1768251200.46081 0
+["pdflatex"] 1770918973.32758 "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" "Ferdi.pdf" "Ferdi" 1770918975.69307 0
   "../preamble.tex" 1767885714 200 206e1443e8fc9a0aba8b9dcef4b3bb43 ""
-  "C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768065810 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769939076 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/beckf/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1767886673 13333486 9da473022eb1e52876ded0402c605b6a ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc" 1256929440 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
+  "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc" 1256929440 2840 216e6e45ad352e2456e1149f28885bee ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -34,6 +35,7 @@
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb" 1256929440 30789 39c6b966e509dbc60e7a1aaaf85d08a0 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb" 1256929440 121145 00b210fbe9efd7ce850c04e64670de9a ""
+  "C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb" 1256929440 27863 09ce3735688ffde955e72da27c95b61a ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty" 1575926576 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -110,12 +112,12 @@
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Ferdi.aux" 1768251200 837 7906d40d8073a7c2790bc2dfd407ec67 "pdflatex"
+  "Ferdi.aux" 1770918975 1417 7c581c98dff957e9a53c094d1a7b082c "pdflatex"
   "Ferdi.bbl" 1767887460 0 d41d8cd98f00b204e9800998ecf8427e "biber Ferdi"
-  "Ferdi.out" 1768251200 600 f9e21503c46be34c56d98bbc461c0eae "pdflatex"
-  "Ferdi.run.xml" 1768251200 2353 9f1e0c6f0d83dcbff6c51b007adf61df "pdflatex"
-  "Ferdi.tex" 1768251194 1459 9c34842c5b0cda94aa4ff27f750d6b1e ""
-  "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" 1768251194 1459 9c34842c5b0cda94aa4ff27f750d6b1e ""
+  "Ferdi.out" 1770918975 1302 6e9eb281aa6ff6d5ce06c6c7ce0aaf18 "pdflatex"
+  "Ferdi.run.xml" 1770918975 2353 9f1e0c6f0d83dcbff6c51b007adf61df "pdflatex"
+  "Ferdi.tex" 1770918962 2190 907b4db096aa7221491630f83387a474 ""
+  "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" 1770918962 2190 907b4db096aa7221491630f83387a474 ""
   (generated)
   "Ferdi.aux"
   "Ferdi.bcf"

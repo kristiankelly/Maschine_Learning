@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  12 JAN 2026 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  12 FEB 2026 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -676,29 +676,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] (Ferdi.aux)
+{C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [2{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] (Ferdi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `Ferdi.out' has not changed.
-(rerunfilecheck)             Checksum: F9E21503C46BE34C56D98BBC461C0EAE;600.
+(rerunfilecheck)             Checksum: 6E9EB281AA6FF6D5CE06C6C7CE0AAF18;1302.
 Package logreq Info: Writing requests to 'Ferdi.run.xml'.
 \openout1 = `Ferdi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19606 strings out of 467871
- 344133 string characters out of 5418377
- 1318610 words of memory out of 5000000
- 48233 multiletter control sequences out of 15000+600000
- 647176 words of font info for 74 fonts, out of 8000000 for 9000
+ 19620 strings out of 467871
+ 344276 string characters out of 5418377
+ 1319610 words of memory out of 5000000
+ 48238 multiletter control sequences out of 15000+600000
+ 647259 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,5n,70p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb>
-Output written on Ferdi.pdf (1 page, 95301 bytes).
+<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Ferdi.pdf (2 pages, 110779 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 10281 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 10321 words of extra memory for PDF output out of 12000 (max. 10000000)
 

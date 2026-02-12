@@ -231,6 +231,7 @@ INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\beckf\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT Ferdi.aux
 INPUT .\Ferdi.out
 INPUT .\Ferdi.out
@@ -246,3 +247,5 @@ INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.p
 INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr7.pfb
+INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\beckf\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
