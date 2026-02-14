@@ -82,5 +82,8 @@
     <requires type="dynamic">
       <file>Ferdi.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>references_ferdi.bib</file>
+    </requires>
   </external>
 </requests>
