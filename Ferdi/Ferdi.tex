@@ -2,22 +2,147 @@
 
 \input{../preamble.tex}
 
+\addbibresource{references_ferdi.bib}
+
 \begin{document}
-Lorem ipsum \\
 
-Grobe Struktur:
-\section{Einleitung}
-Transformer-Modell seit ChatGPT sehr bewährt, bliblablub
+\section{Notation}
+$\ell_{\text{SEQ}} = 512$: Maximale Sequenzlänge (SEQ\_LEN) \\
+$d_{\text{embed}}$: Dimension der Embeddings (EMBED\_DIM) \\
+$d_{\text{ffw}}$: Dimension des Feed-Forward-Netzwerkes (FFW\_DIM) \\
+$N_H$: Anzahl der Attention-Heads (NUM\_HEADS)
 
-\section{Theorie}
-Kurze Wiederholung der theoretischen Grundlagen
 
-\section{Preporcessing}
-Genau gleich wie bei KK
+\section{Musikgenerierung mit Transformern}
 
-\section{Auch hier ein erster Versuch}
+\subsection{Einleitung}
 
-\section{Weitere Versuche}
+\subsection{Preprocessing}
+Für die Transformer-Architektur passen wir das Preprocessing ein wenig an. \\
+Jeden Choral erweitern wir um einen SOS-Token (Start-Of-Sequence) am Anfang und einen EOS-Token (End-Of-Sequence)
+am Ende. Alle diese modifizierten Choräle konkatenieren wir dann zu einem einzigen Vektor $D$. \\
+Sei $C_i = [n_{i,1}, \dots, n_{i, \ell}]$ der $i$-ten Choral, der Datenvektor $D$ ergibt sich dann als
+\begin{align*}
+    D = [\text{SOS}, \underbrace{n_{1, 1}, \dots, n_{1, \ell_1}}_{C_1}, \text{EOS}, 
+    \text{SOS}, \underbrace{n_{2, 1}, \dots, n_{2, \ell_2}}_{C_2}, \text{EOS}, \dots, \text{EOS}]
+\end{align*} 
+Wir schreiben $D=[t_1, \dots, t_n]$ (wobei $t_1 = \text{SOS}$, $t_2 = n_{1,1}$ usw.), die einzelnen $t$s 
+bezeichnen wir als Tokens. \\
+Ein Input-Output-Paar $(x,y)$ ist definiert als:
+\begin{align*}
+    x = [t_k, \dots, t_{k+\ell_{\text{SEQ}}-1}] \\
+    y = [t_{k+1}, \dots, t_{k+\ell_{\text{SEQ}}}]
+\end{align*}
+Das Target $y$ ist also die um eine Position verschobene Input-Sequenz. \\
+Unter Berücksichtigung der drei Spezialtokens $\text{SOS}, \text{EOS} und \text{PAD}$ erhalten wir eine 
+Vokabulargröße $V$ von 131.
+
+\subsection{Musikgenerierung mit Transformern}
+Der Generierungsprozess verläuft analog zu RNNs durch Sampling aus der Wahrscheinlichkeitsverteilung
+des Modells. \\
+In unserem Fall gestalten wir die Generierung mit Transformern etwas flexibler: An die Anfangssequenz wird nur 
+noch folgende Anforderung gestellt 
+$[n_1,\dots, n_k]$, mit $0 \leq k \leq \ell_{\text{SEQ}}$ (wobei wir für $k=0$ eine leere Liste meinen), das ist 
+Konsequenz des SOS-Tokens. Wie sich die Länge der Anfangssequenz auf die Vorhersage des Modells auswirkt, 
+untersuchen wir in \autoref{chap:ferdi:benchmark_tf}. \\
+Ebenso lassen wir das Modell "entscheiden", wann das generierte Stück endet; die Konsequenz des EOS-Tokens (um 
+Endlosschleifen zu vermeiden, ist eine maximale Länge aber dennoch zu setzen). \\
+Die Audiodateien finden sich unter folgenden Link: [HIER LINK EINFÜGEN].
+
+\subsection{Die grundlegende Transformer-Architektur}\label{chap:ferdi:architecture_tf}
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=12cm]{basis_tf_ferdi.png}
+    \caption{Grundlegende Struktur unseres Transformers}
+    \label{fig:ferdi:visualization_tf}
+\end{figure}
+
+Für die konkrete Struktur orientieren wir uns an \cite{chollet2021learning_ferdi}, Da wir während der Inferenz 
+nur Zugriff auf die bisherigen Noten haben, implementieren wir einen Decoder-Only-Transformer. Die in
+\autoref{fig:ferdi:visualization_tf} dargestellte Architektur lässt sich in folgende Komponenten unterteilen, 
+wobei wir an entscheidenden Stellen Hyperparameter wählen müssen, die die Kapazität und das Lernverhalten des
+ Modells beeinflussen:
+ \begin{itemize}
+    \item Wie im Ansatz mit RNNs werden die diskreten Input-Tokens in Vektoren der Dimension $d_{\text{emb}}$
+    eingebettet. Um Informationen über die Positionen zu erhalten, addieren wir positionsabhängige Vektoren
+    gleicher Dimension, in unserem Fall nutzen wir das in \cite{vaswani2017attention_ferdi} vorgestellte 
+    Positional-Encoding.
+    \item Das Herzstück unseres Transformers ist natürlich die Multi-Head-Attention, die Anzahl der Attentions-Heads
+    $N_H$ können wir als weiteren Hyperparameter wählen. Entscheidend ist für uns vorallem die Maskierung:
+    Da wir autoregressiv generieren, darf das Modell an Position $t$ nicht keine Informationen der noch zu
+    generierenden Noten an $t+1, \dots, \ell_{\text{SEQ}}$ erhalten.
+    \item Nach der Attention-Schicht folgt ein einfaches Feed-Forward-Netzwerk, in unserem Fall bestehend aus zwei
+    Schichten. Die Dimension innerhalb dieses Netzwerkes ist ein weiterer Hyperparameter $d_{\text{ffw}}$.
+    \item Schließlich bildet die letzte Schicht auf einen Vektor der Dimension $V$ ab, wir nutzen keine
+    Aktivierungsfunktion, erhalten die sog. Logits als Output. Wendet man auf diese die Softmax-Funktion an, erhält
+    man die Wahrscheinlichkeitsverteilung für das Noten-Sampling.
+ \end{itemize}
+
+\subsection{Ein erster Versuch}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{model1_summary_ferdi.png}
+    \caption{Modell-Zusammenfassung mit $d_{\text{embed}} = 64$, $N_H = 4$ und $d_{\text{ffw}} = 128$}
+    \label{fig:ferdi:model1_tf}
+\end{figure}
+
+Nun stehen wir nicht mehr ganz am Anfang, wir orientieren uns an der Idee, die im Falle von
+RNNs erfolgreich war; unser Modell soll also \bf{eine} \normalfont Note aus $[0, 127]_{\mathbb{Z}}$ vorhersagen. \\
+Gem. \autoref{chap:ferdi:architecture_tf} haben wir $3$ Hyperparameter zu bestimmen, wir wählen
+diese analog zum RNN, siehe \autoref{fig:ferdi:model1_tf}:
+\begin{itemize}
+    \item $d_{\text{embed}} = 64$
+    \item $N_H = 4$
+    \item $d_{\text{ffw}} = 128$
+\end{itemize}
+Wir trainieren ebenfalls für 20 Epochen mit EarlyStopping und ReduceLROnPlateau. Nach 15 Epochen wird das Training
+beendet und das beste Modell aus Epoche 10 übernommen: val-accuracy von ca. 84\% und test-accuracy von ca. 82\%.
+Wieder NICHT SCHLECHT. In \autoref{fig:ferdi:model1_gen1_tf} findet sich das mithilfe des gleichen Input für RNNs generierten
+Musikstückes; \autoref{fig:ferdi:model1_gen2_tf} zeigt hingegen ein vollständig generiertes Stück, nur mit dem 
+$\text{SOS}$-Token als Input.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{model1_gen1_ferdi.png}
+    \caption{Generiertes Musikstück mit $\text{temp}=1.2$, die ersten beiden Takte sind vorgegeben}
+    \label{fig:ferdi:model1_gen1_tf}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{model1_gen2_ferdi.png}
+    \caption{Generiertes Musikstück mit $\text{temp}=1$, wir geben keine Noten vor}
+    \label{fig:ferdi:model1_gen1_tf}
+\end{figure}
+
+Trotz ein paar harmonischen Ungereimheiten ist das erste Stück bis Takt 20 für das ungeschulte Ohr 
+recht gelungen, ab Takt 21 sind die generierten Akkorde eher der Sorte "Free Jazz". Doch auch die
+Transformer-Architektur leidet unter Wiederholung der Akkorde. \\
+Das vollkommen selbst generierte Stück ist hingegen deutlich unharmonischer, so doch sich doch einige anhörliche
+Sequenzen finden lassen. \\
+Doch auch hier sei gewarnt: Die zwei generierten Stücke haben wir exemplarisch ausgewählt, es geht natürlich auch
+schlechter.
+
+\subsection{Ein alter Bekannter}
+Wie oben gesehen hat der Transformer-Ansatz ebenfalls Probleme mit der Akkord-Harmonie, für RNNs hat hier ja die
+veränderte Loss-Funktion geholfen. Wir trainieren also auch unseren Transformer (\autoref{fig:ferdi:model1_tf}) mit
+diesen, wobei wir $w_1 = 0.01$, $w_2 = 0.1$ und $w_3 = 1$ wählen. \\
+Nach 20 Epochen erhalten wir das beste Modell aus Epoche 19 mit val-acc von etwa 83\% und test-acc von etwa 82\%,
+von den reinen Werten ist also keine Verbesserung zu erkennen.
+
+
+\subsection{Vom Bächlein zum Bach}
+Auch mit Transformern kommen wir scheinbar nicht über 85\% Validation-Accuracy hinaus.
+
+\subsubsection{Data-Augmentation}
+Der Trainings-Korpus besteht gerade einmal aus etwas mehr als 220 000 Tokens.
+
+\subsubsection{Größere Modelle}
+
+
+
+
+\subsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
 
 
 

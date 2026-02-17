@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  8 JAN 2026 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  16 FEB 2026 00:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -540,30 +540,34 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \@quotelevel=\count446
 \@quotereset=\count447
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (Ferdi.aux)
+) (Ferdi.aux
+
+LaTeX Warning: Label `fig:ferdi:model1_gen1_tf' multiply defined.
+
+)
 \openout1 = `Ferdi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count448
@@ -583,13 +587,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 5.
-Package microtype Info: Applying patch `item' on input line 5.
-Package microtype Info: Applying patch `toc' on input line 5.
-Package microtype Info: Applying patch `eqnum' on input line 5.
-Package microtype Info: Applying patch `footnote' on input line 5.
-Package microtype Info: Applying patch `verbatim' on input line 5.
-LaTeX Info: Redefining \microtypesetup on input line 5.
+LaTeX Info: Redefining \microtypecontext on input line 7.
+Package microtype Info: Applying patch `item' on input line 7.
+Package microtype Info: Applying patch `toc' on input line 7.
+Package microtype Info: Applying patch `eqnum' on input line 7.
+Package microtype Info: Applying patch `footnote' on input line 7.
+Package microtype Info: Applying patch `verbatim' on input line 7.
+LaTeX Info: Redefining \microtypesetup on input line 7.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -633,43 +637,123 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Ferdi.bbl' found.
  (Ferdi.bbl)
-Package biblatex Info: Reference section=0 on input line 5.
-Package biblatex Info: Reference segment=0 on input line 5.
-Package hyperref Info: Link coloring OFF on input line 5.
+Package biblatex Info: Reference section=0 on input line 7.
+Package biblatex Info: Reference segment=0 on input line 7.
+Package hyperref Info: Link coloring OFF on input line 7.
  (Ferdi.out) (Ferdi.out)
 \@outlinefile=\write4
 \openout4 = `Ferdi.out'.
 
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 10.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 10.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 10.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 10.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 10.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+<basis_tf_ferdi.png, id=52, 332.24126pt x 1016.79875pt>
+File: basis_tf_ferdi.png Graphic file (type png)
+<use basis_tf_ferdi.png>
+Package pdftex.def Info: basis_tf_ferdi.png  used on input line 55.
+(pdftex.def)             Requested size: 111.56131pt x 341.43306pt.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+{C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 66.
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [2{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./basis_tf_ferdi.png>]
+<model1_summary_ferdi.png, id=80, 268.00125pt x 266.9975pt>
+File: model1_summary_ferdi.png Graphic file (type png)
+<use model1_summary_ferdi.png>
+Package pdftex.def Info: model1_summary_ferdi.png  used on input line 84.
+(pdftex.def)             Requested size: 345.0pt x 343.70708pt.
 
- []
 
-[1
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-{C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] (Ferdi.aux)
+
+LaTeX Warning: Reference `fig:ferdi:model1_gen2_tf' on page 3 undefined on input line 101.
+
+<model1_gen1_ferdi.png, id=84, 792.9625pt x 520.94624pt>
+File: model1_gen1_ferdi.png Graphic file (type png)
+<use model1_gen1_ferdi.png>
+Package pdftex.def Info: model1_gen1_ferdi.png  used on input line 106.
+(pdftex.def)             Requested size: 345.0pt x 226.65749pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<model1_gen2_ferdi.png, id=85, 792.9625pt x 513.92pt>
+File: model1_gen2_ferdi.png Graphic file (type png)
+<use model1_gen2_ferdi.png>
+Package pdftex.def Info: model1_gen2_ferdi.png  used on input line 113.
+(pdftex.def)             Requested size: 345.0pt x 223.60043pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3] [4 <./model1_summary_ferdi.png>]
+
+LaTeX Warning: Text page 5 contains only floats.
+
+[5 <./model1_gen1_ferdi.png (PNG copy)> <./model1_gen2_ferdi.png (PNG copy)>] [6] (Ferdi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Ferdi.out' has not changed.
-(rerunfilecheck)             Checksum: F9E21503C46BE34C56D98BBC461C0EAE;600.
+(rerunfilecheck)             Checksum: CF6CBA44B70201BBC62935F62BCEF1A9;1925.
 Package logreq Info: Writing requests to 'Ferdi.run.xml'.
 \openout1 = `Ferdi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19455 strings out of 467871
- 341109 string characters out of 5418377
- 1314610 words of memory out of 5000000
- 48139 multiletter control sequences out of 15000+600000
- 637082 words of font info for 49 fonts, out of 8000000 for 9000
+ 19988 strings out of 467871
+ 352313 string characters out of 5418377
+ 1326554 words of memory out of 5000000
+ 48555 multiletter control sequences out of 15000+600000
+ 657800 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,5n,70p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-Output written on Ferdi.pdf (1 page, 59848 bytes).
+ 68i,15n,70p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@vaswani2017attention_ferdi} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@chollet2021learning_ferdi} has been referenced but does not exist, replaced by a fixed one
+
+<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Ferdi.pdf (6 pages, 308146 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 6185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 18549 words of extra memory for PDF output out of 20736 (max. 10000000)
 
