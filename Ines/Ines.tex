@@ -1,4 +1,8 @@
 \documentclass{"article"}
+\usepackage{enumitem}
+\usepackage{float}
+
+
 
 \input{../preamble.tex}
 \addbibresource{References.bib}
@@ -7,83 +11,88 @@
 
 
 \section{Einleitung}
-In diesem Part der Arbeit, haben wir versucht Musikstücke ihren Komponisten zuzuordnen. Dafür haben wir das Datenset "Classical Music MIDI as CSV", welches auf Kaggle zur Verfügung steht, verwendet.
+In diesem Part der Arbeit, versuchen wir Musikstücke ihren Komponisten zuzuordnen. Dafür verwenden wir das Datenset "Classical Music MIDI as CSV", welches auf Kaggle zur Verfügung steht.
 Auch hier liegt bei den einzelnen Musikstücken wieder nicht die Audiodatei selbst vor, sondern ein MIDI File, mit welchem die Maschine umgehen kann.
 
 Das Datenset ist wiefolgt aufgebaut: 
-    Es gibt 10 verschiedene Kategorien, in welche die Musikstücke eingeordnet werden.
-    \begin{enumerate}
-        \item ALL
-        \item Bach
-        \item Beethoven
-        \item Chopin
-        \item Haendel
-        \item Mozart
-        \item Scarlatti
-        \item Schubert
-        \item Varios - Título desconocido (spanisch für: "Titel unbekannt")
-        \item Vivaldi
-    \end{enumerate}
+Es gibt 10 verschiedene Kategorien, in welche die Musikstücke eingeordnet werden.
+Gibt es zu einem Künstler mehr als 100 Stücke, so hat dieser seine eigene Kategorie. Von vielen Künstlern stehen aber weniger als 100 Werke zur Verfügung. Diese (sowie auch die Stücke der Komponisten mit mehr als 100 Werken) finden sich
+in der Kategorie "ALL". Es gibt eine Kategorie "Varios - Título desconocido", was spanisch ist für "Verschiedene - Titel unbekannt", wo sich Stücke befinden, bei welchen weder Titel noch Künstler bekannt ist.
 
-Gibt es zu einem Künstler mehr als 100 Stücke, so hat dieser seine eigene Kategorie (wie z.B. Bach, Mozart, ...). Von vielen Künstlern stehen aber weniger als 100 Werke zur Verfügung.
-Diese finden sich alle in der Kategorie "ALL". Solche Künstler sind beispielsweise: Pachelbel, Jakobowski oder Strauss. Weitere Informationen zum Aufbau des Datensets, siehe \parencite{Dataset}.
+In diesem Datenset gibt es folgende Kategorien:
 
-Über die Stücke selbst liegen wieder verschiedene Informationen, wie beispielsweise die Noten oder der Taxt vor. Für die Klassifikation haben wir nur die Noten verwendet.
-Die Noten sind Zahlenwerte von eins bis 127, sprich es ist gleich aufgebaut, wie bei der Generierung.
+\begin{enumerate}[label = \textbf{\arabic*.}]
+  \item ALL, mit allen Stücken aus diesem Datenset,
+  \item Bach, wobei hier 35.191 Datenpunkte vorhanden sind,
+  \item Beethoven, mit 29.124,
+  \item Chopin, mit 6.328,
+  \item Händel, mit 6.031,
+  \item Mozart, mit 25.430,
+  \item Scarlatti, mit 12.335,
+  \item Schubert, mit 16.685,
+  \item Varios - Título desconocido und
+  \item Vivaldi, mit 7.494.
+\end{enumerate}
 
-\section{Theorie}
-Noch überlegen.
+Künstler mit weniger als 100 Stücken sind beispielsweise: Pachelbel, Jakobowski oder Strauss.
+Über die Stücke selbst liegen wieder verschiedene Informationen, wie beispielsweise die Noten oder der Takt vor. Für die Klassifikation haben wir nur die Noten verwendet.
+Die Noten sind Zahlenwerte von eins bis 127, sprich es ist gleich aufgebaut, wie beim Teil der Generierung.
+Weitere Informationen zum Aufbau des Datensets, siehe \parencite{Dataset}.
 
-\section{Klassifikation mit RandomForestClassifier}
 \textit{Im Allgemeinen haben wir in diesem Abschnitt die Kategorien 1 (ALL) und 8 (Título desconocido) ausgelassen, weil sie alle Stücke bzw. Stücke ohne Künstler beinhalten und wir das 
 für die Klassifikation nicht verwenden können.}
-\subsection{Vorbereitung der Daten}
 
+
+\section{Vorbereitung der Daten}
+
+\textbf{Kristian schreibst du das noch, weil sonst würd ich einfach schreiben: "ist gleich wie bei Generierung"}
+
+
+\section{Klassifikation mit RandomForestClassifier}
 \subsection{Erster Versuch}
 Zur Klassifikation verwenden wir einen Random Forest. Nachem wir die Daten vorbereitet haben, ordnen wir die Stücke ihren Komponisten zu.
-Da die Daten sehr unausgeglichen sind (so hat zum Beispiel Bach am meisten mit 35.191 Daten und Haendel mit nur 6.031 die wenigsten Informationen) muss das Datenset balanciert werden. 
+Da die Daten sehr unausgeglichen sind (so hat zum Beispiel Bach am meisten mit 35.191 Daten und Händel mit nur 6.031 die wenigsten Informationen) muss das Datenset balanciert werden. 
 Dabei gehen aber im schlimmsten Fall (von Bach) 29.160 Datenpunkte, also über 80\% der Informationen verloren. Das ist natürlich nicht gut für die Klassifikation, wie sich später auch zeigen wird.
 
 
-
-Trainiert man einen Random Forest mit den Default-Werten (siehe: \parencite{Dataset}), so erhält man eine Accuracy von: 27\%. Also schlecht. Setzt man den Defaultwert von \emph{n\_estimators}, also 
-der Anzahl der Bäume im Forest höher, so verbessert sich die Accuracy. Bei beispielsweise 1.000 Bäumen hat man eine Genauigkeit von 31\%, was besser aber immernoch schlecht ist.
+Trainiert man einen Random Forest mit den Default-Werten, so erhält man eine Accuracy von 27\%. Also schlecht. Setzt man den Defaultwert von \emph{n\_estimators} (die Anzahl
+der Bäume im Forest) höher, so verbessert sich die Accuracy. Bei beispielsweise 1.000 Bäumen hat man eine Genauigkeit von 31\%, was besser aber immernoch schlecht ist.
+Das Problem, wenn man \emph{n\_estimators} höher setzt, ist, dass es länger braucht zum Laden. 
 Betrachtet man die Confusionmatrix (\ref{fig:Klassifikation_ohne_Epochen}), kann man folgendes erkennen:
 
 \begin{itemize}
-    \item Stücke von Schubert können gut klassifiziert werden.
-    \item Auf der anderen Seite, fällt es dem Modell schwer Werke von Scarlatti einzuordnen.
+    \item Stücke von zum Beispiel Schubert können gut klassifiziert werden.
+    \item Zu großen Verwechslungen kommt es beispielsweise zwischen Händel und Bach.
     \item Im Allgemeinen sieht man aber, dass Musikstücke oft in der gleichen Zeitepoche, in welcher die Künstler gelebt haben, vertauscht werden.
 \end{itemize}
 
-\begin{figure}[h]
+Durch die Beobachtung, dass Werke, die der gleichen Epoche angehören öfter verwechselt werden, sind wir
+auf die Idee gekommen im zweiten Versuch über zwei (bzw. dann fünf) Modelle zu klassifizieren. Hier haben wir das Musikstück zuerst seiner Epoche und dann innerhalb dieser, dem Komponisten zugeordnet.
+
+\begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{Klassifikation_ohne_Epochen.png}
   \caption{Klassifikation mit 1.000 Bäumen im Forest}
   \label{fig:Klassifikation_ohne_Epochen}
 \end{figure}
 
-Das Problem, wenn man \emph{n\_estimators} höher setzt, ist, dass es länger braucht zum Laden. Durch die Beobachtung, dass Werke, die der gleichen Epoche angehören öfter verwechselt werdenn, sind wir
-auf die Idee gekommen im zweiten Versuch über zwei (bzw. dann fünf) Modelle zu klassifizieren. Hier haben wir zuerst das Lied seiner Epoche und dann innerhalb dieser dem Komponisten zugeordnet.
-
 
 \subsection{Zweiter Versuch: Mit Einbezug der zeitlichen Epochen}
 \subsubsection{Modell zur Klasssifizierung in die Epochen}
 Wir trainieren zuerst nach den verschiedenen Epochen, in welchen die Künstler gelebt haben. Diese sind:
 \begin{itemize}
-    \item[Barock]: Scarlatti, Vivaldi, Bach, Haendel
-    \item[Klassik]: Mozart, Beethofen
-    \item[Romantik]: Schubert, Chopin
+    \item[\textbf{Barock}]: Scarlatti, Vivaldi, Bach, Händel, mit 61.051 Datenpunkten,
+    \item[\textbf{Klassik}]: Mozart, Beethoven, mit 54.554 und
+    \item[\textbf{Romantik}]: Schubert, Chopin, mit 23.013.
 \end{itemize}
 
-Die Accuracy beim Einordnen der Stücke in ihre jeweiligen Epochen beträgt 55\%. Auch hier verlieren wir wieder viele Daten, da bei der Zuordnung zu den verschiedenen Zeitabschnitten grosse Unterschiede
-auftreten. So hat die Epoche Barock 61.051 Stücke, während es in der Romantik nur noch 23.013 gibt. Also verlieren wir beim Balancieren der Datensets 1/3 der Daten. Was zwar nicht so schlimm, wie beim 
-ersten Versuch (bei welchem wir fast 80\% verloren haben), aber trotzdem nicht gut ist. Auch das können wir später wieder erkennen.
+Die Accuracy beim Einordnen der Stücke in ihre jeweiligen Epochen beträgt 55\%. Auch hier verlieren wir wieder viele Daten beim Balancieren, da bei der Zuordnung zu den verschiedenen Zeitabschnitten grosse Unterschiede
+auftreten. So hat die Romantik nur noch 1/3 der Daten, die beim Barock vorliegen. Dennoch ist das Problem zu Versuch eins,
+wo wir 80\% verloren haben, besser geworden.
 
 \subsubsection{Modelle zum Klassifizieren innerhalb der einzelnen Epochen}
 Innerhalb der verschiedenen Epochen (Barock, Klassik und Romantik) werden die Werke ihren Komponisten zugeordnet. Das hat, wie man in der Grafik \ref{fig:Innerhalb_der_Epochen} erkennen kann vorallem in der Klassik sowie Romantik
-sehr gut funktiniert. Dort erreichen wir eine Accuracy von 67\% bzw. 66\% erreicht. Nur im Barock funktioniert es etwas schlechter mit einer Genauikgeit von 43\%, wobei vorallem Scarlatti und Vivaldi das
-Problem ausmachen.
+ gut funktioniert. Dort erreichen wir eine Accuracy von 67\% bzw. 66\%. Nur im Barock funktioniert es schlechter mit einer Genauikgeit von 43\%, wobei vorallem Scarlatti und Vivaldi oft falsch eingeordnet werden.
 
 \begin{figure}[h]
   \centering
@@ -102,13 +111,28 @@ Schlussendlich haben wir diese vier Modelle in folgendem Sinne verbunden:
   \label{fig:Verbinden_der_Modelle}
 \end{figure}
 
-Wie man im Flowchart \ref{fig:Verbinden_der_Modelle} entnehmen kann, wird ein Musikstück genommen und seiner Epoche zugeordnet. Innerhalb dieser Epoche wird es dann wieder seinem Künstler zugeteilt.
-Mit diesen fünf Modellen haben wir eine Accuracy von knapp 40\% erreicht, was auch nicht gut ist.
-Dies liegt wahrscheinlich daran, dass schon beim Einteilen in die verschiedenen Epochen nur eine Genauigkeit von 55\% erreicht werden kann. Somit wäre das dann auch die maximal mögliche Genauigkeit.
-Man könnte diese durch Datenaugumentation erhöhen, indem man nicht die Stücke aus der Barockepoche wegschneidet, sodass man gleichviele hat, wie in der Romantik. Sondern so viele in der Romantik hinzugibt, bis die Anzahl ähnlich ist.
-Das haben wir in Versuch 3 umgesetzt:
+Wie man aus dem Flowchart \ref{fig:Verbinden_der_Modelle} entnehmen kann, wird ein Musikstück genommen und seiner Epoche zugeordnet. Innerhalb dieser Epoche wird es dann wieder seinem Künstler zugeteilt.
+Mit diesen fünf Modellen haben wir eine Accuracy von knapp 40\% erreicht, was etwas besser ist, als zuvor.
+Dennoch ist sie nicht besonders gut, was daran liegt, dass schon beim Einteilen in die verschiedenen Epochen nur eine Genauigkeit von 55\% erreicht wird. Somit wäre das dann auch die maximal mögliche Genauigkeit.
 
-\subsection{Versuch 3: Balancieren mittels Datenaugumentation}
 
+\section{Klassifizieren mittels Support Vector Classification (SCV)}
+In einem neuen Versuch verwenden wir anstatt des RandomForestClassifiers eine Support Vektor Maschine, mit welcher wir dann Klassifizieren (gennant auch SVC für Support Vector Classification).
+Bei der SVC werden die Objekte in Klassen unterteilt, wobei diese durch Vektoren im Vektorraum dargestellt werden. Der Algorithmus versucht dann, die Objekte durch Hyperebenen so zu trennen, dass der Abstand der Vektoren, welche
+am nächsten an der Hyperebene liegen maximiert wird. Gibt man dem Modell später neue unbekannte Daten, versucht es, diese in die vorgelernten Klassen einzuteilen, anhand der Trennlinien, die zuvor antrainiert wurden \parencite{Wikipedia_SVM}.
+
+Da dies aber vorallem für viele Daten sehr aufwändig ist, haben wir die Daten pro Künstler nur auf 603 (also 1/10 von dem, was wir aufgrund des Balancieren verwenden könnten) beschränkt. Ohne diese Maßnahme wäre es nicht möglich gewesen,
+einen RandomizedSearchCV anzuwenden, welcher die besten Parameter für die Support Vector Classification sucht.
+
+Mit den Standardparametern der Support Vektor Klassifizierung erhält man eine Accuracy von nur 18\%.
+
+Die Suche nach den besten Parametern ergibt eine Genauigkeit von ---\%. Diese Parameter sind:
+\begin{itemize}
+  \item[\textbf{C}]:
+  \item[\textbf{Kernel}]: Braucht man, da die SVC normalerweise nur linear sein würde. Das Modell versucht also die Daten linear zu trennen. Dies ist aber nicht möglich, da die gegeben Daten nicht linear sind. Also verwendet man einen Kernel, um auch gekrümmte Schnittlinien zu erhalten.
+  \item[\textbf{Degree}]:
+  \item[\textbf{Gamma}]: Diesen Koeffizienten braucht man nur, wenn der Kernel "rbf", "poly" oder "sigmoid" ist. Wir haben aber nur zwischen Poly, Sigmoid und Linear den besten Kerneltyp gesucht. Somit würde $\gamma$ nur bei Poly oder Sigmoid verwendet werden.
+  \item[\textbf{Tol}]:
+\end{itemize}
 
 \end{document}

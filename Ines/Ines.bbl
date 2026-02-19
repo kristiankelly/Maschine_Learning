@@ -19,6 +19,43 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{Wikipedia_SVM}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0593bce9c9c4a6ccb92db3fc27d05c36}{%
+           family={Bitbert},
+           familyi={B\bibinitperiod},
+           given={Fasi},
+           giveni={F\bibinitperiod},
+           givenun=0,
+           suffix={Pberens},
+           suffixi={P\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{fullhash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{fullhashraw}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{bibnamehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authorbibnamehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authornamehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authorfullhash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authorfullhashraw}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-19}
+      \field{title}{Support Vekctor Machine}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Support_Vector_Machine
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Support_Vector_Machine
+      \endverb
+    \endentry
     \entry{Dataset}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b5a4c9729940d0782a11f9ae70ff24}{%
@@ -42,7 +79,7 @@
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2026-02-14}
       \field{title}{Classical Music MIDI as CSV}
-      \field{year}{1997}
+      \field{year}{2022}
       \verb{urlraw}
       \verb https://www.kaggle.com/datasets/vincentloos/classical-music-midi-as-csv?select=README.txt
       \endverb
@@ -52,6 +89,43 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
+    \entry{Wikipedia_SVM}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0593bce9c9c4a6ccb92db3fc27d05c36}{%
+           family={Bitbert},
+           familyi={B\bibinitperiod},
+           given={Fasi},
+           giveni={F\bibinitperiod},
+           givenun=0,
+           suffix={Pberens},
+           suffixi={P\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{fullhash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{fullhashraw}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{bibnamehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authorbibnamehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authornamehash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authorfullhash}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \strng{authorfullhashraw}{0593bce9c9c4a6ccb92db3fc27d05c36}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-19}
+      \field{title}{Support Vekctor Machine}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Support_Vector_Machine
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Support_Vector_Machine
+      \endverb
+    \endentry
     \entry{Dataset}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b5a4c9729940d0782a11f9ae70ff24}{%
@@ -75,7 +149,7 @@
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2026-02-14}
       \field{title}{Classical Music MIDI as CSV}
-      \field{year}{1997}
+      \field{year}{2022}
       \verb{urlraw}
       \verb https://www.kaggle.com/datasets/vincentloos/classical-music-midi-as-csv?select=README.txt
       \endverb
