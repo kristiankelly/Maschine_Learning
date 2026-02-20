@@ -2,16 +2,11 @@
 
 \input{../preamble.tex}
 
+\usepackage{subcaption}
+
 \addbibresource{references_ferdi.bib}
 
 \begin{document}
-
-\section{Notation}
-$\ell_{\text{SEQ}} = 512$: Maximale Sequenzlänge (SEQ\_LEN) \\
-$d_{\text{embed}}$: Dimension der Embeddings (EMBED\_DIM) \\
-$d_{\text{ffw}}$: Dimension des Feed-Forward-Netzwerkes (FFW\_DIM) \\
-$N_H$: Anzahl der Attention-Heads (NUM\_HEADS)
-
 
 \section{Musikgenerierung mit Transformern}
 
@@ -43,11 +38,13 @@ des Modells. \\
 In unserem Fall gestalten wir die Generierung mit Transformern etwas flexibler: An die Anfangssequenz wird nur 
 noch folgende Anforderung gestellt 
 $[n_1,\dots, n_k]$, mit $0 \leq k \leq \ell_{\text{SEQ}}$ (wobei wir für $k=0$ eine leere Liste meinen), das ist 
-Konsequenz des SOS-Tokens. Wie sich die Länge der Anfangssequenz auf die Vorhersage des Modells auswirkt, 
+Konsequenz des SOS-Tokens; $\ell_{\text{SEQ}}$ ist dabei im Wesentlichen die maximale Sequenzlänge, die das Modell verarbeiten kann, wir wählen, falls nicht
+anders genannt, $\ell_{\text{SEQ}} = 512$. \\
+Wie sich die Länge der Anfangssequenz auf die Vorhersage des Modells auswirkt, 
 untersuchen wir in \autoref{chap:ferdi:benchmark_tf}. \\
 Ebenso lassen wir das Modell "entscheiden", wann das generierte Stück endet; die Konsequenz des EOS-Tokens (um 
 Endlosschleifen zu vermeiden, ist eine maximale Länge aber dennoch zu setzen). \\
-Die Audiodateien finden sich unter folgenden Link: [HIER LINK EINFÜGEN].
+Die Audiodateien finden sich unter folgenden Link: \url{https://www.kaggle.com/code/ferdibck/audiodateien-fuer-ausarbeitung-transformer}.
 
 \subsection{Die grundlegende Transformer-Architektur}\label{chap:ferdi:architecture_tf}
 \begin{figure}[h]
@@ -104,15 +101,15 @@ $\text{SOS}$-Token als Input.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{model1_gen1_ferdi.png}
-    \caption{Generiertes Musikstück mit $\text{temp}=1.2$, die ersten beiden Takte sind vorgegeben}
+    \caption{Generiertes Musikstück mit $\text{temp}=1.2$, die ersten beiden Takte sind vorgegeben (A)}
     \label{fig:ferdi:model1_gen1_tf}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{model1_gen2_ferdi.png}
-    \caption{Generiertes Musikstück mit $\text{temp}=1$, wir geben keine Noten vor}
-    \label{fig:ferdi:model1_gen1_tf}
+    \caption{Generiertes Musikstück mit $\text{temp}=1$, wir geben keine Noten vor (B)}
+    \label{fig:ferdi:model1_gen2_tf}
 \end{figure}
 
 Trotz ein paar harmonischen Ungereimheiten ist das erste Stück bis Takt 20 für das ungeschulte Ohr 
@@ -123,27 +120,118 @@ Sequenzen finden lassen. \\
 Doch auch hier sei gewarnt: Die zwei generierten Stücke haben wir exemplarisch ausgewählt, es geht natürlich auch
 schlechter.
 
-\subsection{Ein alter Bekannter}
+\subsection{Ein alter Bekannter}\label{chap:ferdi:loss_tf}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{model2_gen1_ferdi.png}
+    \caption{Generiertes Musikstück mit $\text{temp}=1.2$, die ersten beiden Takte sind wieder vorgegeben (C)}
+    \label{fig:ferdi:model2_gen1_tf}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{model2_gen2_ferdi.png}
+    \caption{Generiertes Musikstück mit $\text{temp}=1$, wir geben wieder keine Noten vor (D)}
+    \label{fig:ferdi:model2_gen2_tf}
+\end{figure}
+
 Wie oben gesehen hat der Transformer-Ansatz ebenfalls Probleme mit der Akkord-Harmonie, für RNNs hat hier ja die
 veränderte Loss-Funktion geholfen. Wir trainieren also auch unseren Transformer (\autoref{fig:ferdi:model1_tf}) mit
 diesen, wobei wir $w_1 = 0.01$, $w_2 = 0.1$ und $w_3 = 1$ wählen. \\
 Nach 20 Epochen erhalten wir das beste Modell aus Epoche 19 mit val-acc von etwa 83\% und test-acc von etwa 82\%,
-von den reinen Werten ist also keine Verbesserung zu erkennen.
+von den reinen Werten ist also keine Verbesserung zu erkennen. In der Generierung lässt sich sogar eher eine Verschlechterung erkennen,
+im Eye-Test scheint diese instabiler zu sein, die generierten Stücke finden sich in \autoref{fig:ferdi:model2_gen1_tf} und
+\autoref{fig:ferdi:model2_gen2_tf}. \\
+Aufgrund der häufig vorkommenden Dissonanzen trainieren wir das Modell erneut, dieses mal mit $w_1 = 0.01$, $w_2 = 1$ und
+$w_3 = 10$. Das Ergebnis ist noch ernüchtender, das Modell beendet jedliche Notensequenzen mit dem $\text{EOS}$-Token nahezu sofort.
 
-
-\subsection{Vom Bächlein zum Bach}
-Auch mit Transformern kommen wir scheinbar nicht über 85\% Validation-Accuracy hinaus.
-
-\subsubsection{Data-Augmentation}
-Der Trainings-Korpus besteht gerade einmal aus etwas mehr als 220 000 Tokens.
-
-\subsubsection{Größere Modelle}
-
-
-
+\subsection{Ein Versuch von Data-Augmentation}
+Unser Trainings-Korpus ist mit 220 000 Tokens nahezu winzig im Vergleich zur heutigen Menge von Trainingsdaten für Transformer-Modelle. Vielleicht helfen auch
+in unserem Fall mehr Daten. \\
+Das Augmenting funktioniert ganz einfach, für jeden Choral $C_i = [n_{i,1}, \dots, n_{i, \ell}]$, fügen wir auch $C_i + t = [n_{i,1}+t, \dots, n_{i, \ell}+t]$
+in unseren Datenvektor $D$ hinzu; wir verschieben die Noten einfach um $t$ Halbtonschritte nach oben oder unten. Wir nutzen $t = -5, -4, -3, \dots, 6$. \\
+Als weiteren Wermutstropfen erhalten wir auch mit Data Augmentation nur eine val-acc bei 84\% und eine test-acc bei 83\%. Die Generierung läuft allerdings 
+wieder etwas stabiler als in \autoref{chap:ferdi:loss_tf} (Zur Info: aufgrund der Trainingsdauer haben wir für dieses Modell $\ell_{\text{SEQ}} = 256$ gewählt).
 
 \subsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
+Abschließend wollen wir mit dem ersten Modell noch ein paar "Benchmarks" auf dem Test-Set durchführen. \\
+Zunächst betrachten wir für eine fixe Input-Länge die Generierung als Klassifikationsproblem, \autoref{fig:ferdi:model1_conf_mat} zeigt die zugehörige
+Confusion-Matrix. \\
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{model1_confmat1_ferdi.png}
+    \caption{Confusion-Matrix, Input-Länge von 32}
+    \label{fig:ferdi:model1_conf_mat}
+\end{figure}
 
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{model1_confmat2_ferdi.png}
+    \caption{Confusion-Matrix, Input-Länge von 128}
+    \label{fig:ferdi:model1_conf_mat2}
+\end{figure}
+
+Uns fallen zwei Dinge auf zunächst werden wenige Tokens tatsächlich verwendet, das ist allerdings nicht verwunderlich; sehr tiefe bzw. hohe Tonhöhen
+kommen in Musik (jeglicher Zeit) kaum vor. Diesen "Beschränkung" hat auch unser Modell gelernt, ebenfalls dominiert die Hauptdiagonale die Vorhersagen
+deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix genauer fallen die zwei symmetrischen Nebendiagonalen auf 
+(die untere beginnt bei etwa $(36, 48)$ und endet bei etwa $(66, 78)$), die Nebendiagonalen liegen also interessanterweise
+ $\pm 12$ Token-IDs unter bzw. über der Hauptdiagonale. Das sind genau 12 Halbtonschritte, also eine Oktave! Die Vorhersage ist also in diesem Fall
+ harmonisch korrekt, wenn auch im falschen Intervall. \\
+ \autoref{fig:ferdi:model1_conf_mat2} zeigt ein nahezu identisches Bild. Zum einem bestätigt das die Robustheit des Modells, doch ergibt sich daraus
+ auch eine ernüchternde Konsequenz, Beziehungen von Noten über lange Zeiten sind nicht vorhanden oder werden vom Modell nicht gelernt; doch gerade
+ darin haben Transformer-Modell ihren Vorteil gegenüber anderer Methoden, siehe \cite{vaswani2017attention_ferdi}. Das ist vermutlich auch 
+ der Grund für die nahezu identische Leistung gegenüber RNNs. \\
+ \autoref{fig:ferdi:in1}, \autoref{fig:ferdi:in2}, \autoref{fig:ferdi:in3} und  \autoref{fig:ferdi:in4} zeigt die Entwicklung der Confusion-Matrizen
+ mit länger werdender Input-Länge von $1, 2, 3, 4$. Zusammen mit \autoref{fig:ferdi:max_probs} bestätigen diese die Beobachtungen; ab einer 
+ Input-Länge von 4 ist die Vorhersage des Modells praktisch fix, die Confusion-Matrix ist nahzu identisch zu den Matrizen mit Input-Länge von 32 und
+ Input-Länge von 128. Das Modell profitiert also kaum von den Vorteilen der Transformerarchitektur.
+\begin{figure}[htbp]
+  \begin{subfigure}{1\textwidth} 
+    \centering
+    \includegraphics[height=0.35\textheight, keepaspectratio]{in1_ferdi.png}
+    \caption{Input-Länge von 1}
+    \label{fig:ferdi:in1}
+  \end{subfigure}
+  
+  \vspace{0.5cm} % Etwas Luft zwischen den Bildern
+  
+  \begin{subfigure}{1\textwidth}
+    \centering
+    \includegraphics[height=0.35\textheight, keepaspectratio]{in2_ferdi.png}
+    \caption{Input-Länge von 2}
+    \label{fig:ferdi:in2}
+  \end{subfigure}
+  \caption{Entwicklung der Confusion-Matrizen (Teil 1)}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+  \begin{subfigure}{1\textwidth} 
+    \centering
+    \includegraphics[height=0.35\textheight, keepaspectratio]{in3_ferdi.png}
+    \caption{Input-Länge von 3}
+    \label{fig:ferdi:in3}
+  \end{subfigure}
+  
+  \vspace{0.5cm} % Etwas Luft zwischen den Bildern
+  
+  \begin{subfigure}{1\textwidth}
+    \centering
+    \includegraphics[height=0.35\textheight, keepaspectratio]{in4_ferdi.png}
+    \caption{Input-Länge von 4}
+    \label{fig:ferdi:in4}
+  \end{subfigure}
+  \caption{Entwicklung der Confusion-Matrizen (Teil 2)}
+\end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{model1_confidence_ferdi.png}
+    \caption{Maximale Wahrscheinlichkeiten für den nächsten Token in Abhängigkeit der Input-Länge}
+    \label{fig:ferdi:max_probs}
+\end{figure}
 
 \end{document}

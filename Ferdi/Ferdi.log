@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  16 FEB 2026 00:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  20 FEB 2026 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -537,49 +537,69 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip80
+) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen165
+\captionmargin=\dimen166
+\caption@leftmargin=\dimen167
+\caption@rightmargin=\dimen168
+\caption@width=\dimen169
+\caption@indent=\dimen170
+\caption@parindent=\dimen171
+\caption@hangindent=\dimen172
+Package caption Info: Standard document class detected.
 )
-\@quotelevel=\count446
-\@quotereset=\count447
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
+\c@caption@flags=\count446
+\c@continuedfloat=\count447
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count448
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count449
+)
+\@quotelevel=\count450
+\@quotereset=\count451
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (Ferdi.aux
-
-LaTeX Warning: Label `fig:ferdi:model1_gen1_tf' multiply defined.
-
-)
+) (Ferdi.aux)
 \openout1 = `Ferdi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count448
-\scratchdimen=\dimen165
+\scratchcounter=\count452
+\scratchdimen=\dimen173
 \scratchbox=\box56
-\nofMPsegments=\count449
-\nofMParguments=\count450
+\nofMPsegments=\count453
+\nofMParguments=\count454
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count451
-\MPscratchDim=\dimen166
-\MPnumerator=\count452
-\makeMPintoPDFobject=\count453
+\MPscratchCnt=\count455
+\MPscratchDim=\dimen174
+\MPnumerator=\count456
+\makeMPintoPDFobject=\count457
 \everyMPtoPDFconversion=\toks32
 ) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -587,13 +607,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 7.
-Package microtype Info: Applying patch `item' on input line 7.
-Package microtype Info: Applying patch `toc' on input line 7.
-Package microtype Info: Applying patch `eqnum' on input line 7.
-Package microtype Info: Applying patch `footnote' on input line 7.
-Package microtype Info: Applying patch `verbatim' on input line 7.
-LaTeX Info: Redefining \microtypesetup on input line 7.
+LaTeX Info: Redefining \microtypecontext on input line 9.
+Package microtype Info: Applying patch `item' on input line 9.
+Package microtype Info: Applying patch `toc' on input line 9.
+Package microtype Info: Applying patch `eqnum' on input line 9.
+Package microtype Info: Applying patch `footnote' on input line 9.
+Package microtype Info: Applying patch `verbatim' on input line 9.
+LaTeX Info: Redefining \microtypesetup on input line 9.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -637,123 +657,180 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Ferdi.bbl' found.
  (Ferdi.bbl)
-Package biblatex Info: Reference section=0 on input line 7.
-Package biblatex Info: Reference segment=0 on input line 7.
-Package hyperref Info: Link coloring OFF on input line 7.
+Package biblatex Info: Reference section=0 on input line 9.
+Package biblatex Info: Reference segment=0 on input line 9.
+Package hyperref Info: Link coloring OFF on input line 9.
  (Ferdi.out) (Ferdi.out)
 \@outlinefile=\write4
 \openout4 = `Ferdi.out'.
 
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 10.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 18.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 10.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 18.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 10.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 18.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 10.
+(Font)              <10> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 10.
+(Font)              <7> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 10.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+(Font)              <5> on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<basis_tf_ferdi.png, id=52, 332.24126pt x 1016.79875pt>
+<basis_tf_ferdi.png, id=41, 332.24126pt x 1016.79875pt>
 File: basis_tf_ferdi.png Graphic file (type png)
 <use basis_tf_ferdi.png>
-Package pdftex.def Info: basis_tf_ferdi.png  used on input line 55.
+Package pdftex.def Info: basis_tf_ferdi.png  used on input line 52.
 (pdftex.def)             Requested size: 111.56131pt x 341.43306pt.
- [1
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1
 
 {C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 66.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 63.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2{C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./basis_tf_ferdi.png>]
-<model1_summary_ferdi.png, id=80, 268.00125pt x 266.9975pt>
+<model1_summary_ferdi.png, id=70, 268.00125pt x 266.9975pt>
 File: model1_summary_ferdi.png Graphic file (type png)
 <use model1_summary_ferdi.png>
-Package pdftex.def Info: model1_summary_ferdi.png  used on input line 84.
+Package pdftex.def Info: model1_summary_ferdi.png  used on input line 81.
 (pdftex.def)             Requested size: 345.0pt x 343.70708pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:ferdi:model1_gen2_tf' on page 3 undefined on input line 101.
-
-<model1_gen1_ferdi.png, id=84, 792.9625pt x 520.94624pt>
+ [3 <./model1_summary_ferdi.png>]
+<model1_gen1_ferdi.png, id=82, 792.9625pt x 403.5075pt>
 File: model1_gen1_ferdi.png Graphic file (type png)
 <use model1_gen1_ferdi.png>
-Package pdftex.def Info: model1_gen1_ferdi.png  used on input line 106.
-(pdftex.def)             Requested size: 345.0pt x 226.65749pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<model1_gen2_ferdi.png, id=85, 792.9625pt x 513.92pt>
+Package pdftex.def Info: model1_gen1_ferdi.png  used on input line 103.
+(pdftex.def)             Requested size: 345.0pt x 175.56128pt.
+<model1_gen2_ferdi.png, id=83, 792.9625pt x 513.92pt>
 File: model1_gen2_ferdi.png Graphic file (type png)
 <use model1_gen2_ferdi.png>
-Package pdftex.def Info: model1_gen2_ferdi.png  used on input line 113.
+Package pdftex.def Info: model1_gen2_ferdi.png  used on input line 110.
 (pdftex.def)             Requested size: 345.0pt x 223.60043pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3] [4 <./model1_summary_ferdi.png>]
+<model2_gen1_ferdi.png, id=84, 792.9625pt x 476.78125pt>
+File: model2_gen1_ferdi.png Graphic file (type png)
+<use model2_gen1_ferdi.png>
+Package pdftex.def Info: model2_gen1_ferdi.png  used on input line 127.
+(pdftex.def)             Requested size: 345.0pt x 207.44182pt.
 
-LaTeX Warning: Text page 5 contains only floats.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./model1_gen1_ferdi.png (PNG copy)> <./model1_gen2_ferdi.png (PNG copy)>] [6] (Ferdi.aux)
+<model2_gen2_ferdi.png, id=85, 792.9625pt x 428.60126pt>
+File: model2_gen2_ferdi.png Graphic file (type png)
+<use model2_gen2_ferdi.png>
+Package pdftex.def Info: model2_gen2_ferdi.png  used on input line 134.
+(pdftex.def)             Requested size: 345.0pt x 186.47928pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./model1_gen1_ferdi.png (PNG copy)>] [5 <./model1_gen2_ferdi.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+
+ []
+
+[6 <./model2_gen1_ferdi.png (PNG copy)> <./model2_gen2_ferdi.png (PNG copy)>]
+<model1_confmat1_ferdi.png, id=108, 678.25395pt x 626.5809pt>
+File: model1_confmat1_ferdi.png Graphic file (type png)
+<use model1_confmat1_ferdi.png>
+Package pdftex.def Info: model1_confmat1_ferdi.png  used on input line 164.
+(pdftex.def)             Requested size: 345.0pt x 318.71066pt.
+<model1_confmat2_ferdi.png, id=109, 678.25395pt x 626.5809pt>
+File: model1_confmat2_ferdi.png Graphic file (type png)
+<use model1_confmat2_ferdi.png>
+Package pdftex.def Info: model1_confmat2_ferdi.png  used on input line 171.
+(pdftex.def)             Requested size: 345.0pt x 318.71066pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<in1_ferdi.png, id=117, 678.25395pt x 626.5809pt>
+File: in1_ferdi.png Graphic file (type png)
+<use in1_ferdi.png>
+Package pdftex.def Info: in1_ferdi.png  used on input line 193.
+(pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
+<in2_ferdi.png, id=118, 678.25395pt x 626.5809pt>
+File: in2_ferdi.png Graphic file (type png)
+<use in2_ferdi.png>
+Package pdftex.def Info: in2_ferdi.png  used on input line 202.
+(pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
+[7 <./model1_confmat1_ferdi.png>] [8 <./model1_confmat2_ferdi.png>] [9 <./in1_ferdi.png> <./in2_ferdi.png>]
+<in3_ferdi.png, id=142, 678.25395pt x 626.5809pt>
+File: in3_ferdi.png Graphic file (type png)
+<use in3_ferdi.png>
+Package pdftex.def Info: in3_ferdi.png  used on input line 214.
+(pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
+<in4_ferdi.png, id=143, 678.25395pt x 626.5809pt>
+File: in4_ferdi.png Graphic file (type png)
+<use in4_ferdi.png>
+Package pdftex.def Info: in4_ferdi.png  used on input line 223.
+(pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
+<model1_confidence_ferdi.png, id=144, 611.4042pt x 394.95555pt>
+File: model1_confidence_ferdi.png Graphic file (type png)
+<use model1_confidence_ferdi.png>
+Package pdftex.def Info: model1_confidence_ferdi.png  used on input line 232.
+(pdftex.def)             Requested size: 345.0pt x 222.87308pt.
+
+Underfull \hbox (badness 1264) in paragraph at lines 233--233
+[]\OT1/lmr/m/n/10 (+20) Figure 11: |Max-i-male Wahrschein-lichkeiten f^^?ur den n^^?achsten To-ken in
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./in3_ferdi.png> <./in4_ferdi.png>] [11 <./model1_confidence_ferdi.png>] (Ferdi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Ferdi.out' has not changed.
-(rerunfilecheck)             Checksum: CF6CBA44B70201BBC62935F62BCEF1A9;1925.
+(rerunfilecheck)             Checksum: 419E7CB98F4BB378F75D903DF5285DD1;1593.
 Package logreq Info: Writing requests to 'Ferdi.run.xml'.
 \openout1 = `Ferdi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19988 strings out of 467871
- 352313 string characters out of 5418377
- 1326554 words of memory out of 5000000
- 48555 multiletter control sequences out of 15000+600000
- 657800 words of font info for 95 fonts, out of 8000000 for 9000
+ 21521 strings out of 467871
+ 382278 string characters out of 5418377
+ 1354337 words of memory out of 5000000
+ 50043 multiletter control sequences out of 15000+600000
+ 661832 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,15n,70p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 68i,15n,77p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{cite.0@vaswani2017attention_ferdi} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@chollet2021learning_ferdi} has been referenced but does not exist, replaced by a fixed one
 
-<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Ferdi.pdf (6 pages, 308146 bytes).
+<C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Ferdi.pdf (11 pages, 1049767 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 18549 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 20618 words of extra memory for PDF output out of 20736 (max. 10000000)
 
