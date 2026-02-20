@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Ferdi"] 1771607862.85895 "Ferdi.bcf" "Ferdi.bbl" "Ferdi" 1771609455.45897 0
-  "Ferdi.bcf" 1771609455 133788 31085f915cc6f0a67822329d2c5375f9 "pdflatex"
+["biber Ferdi"] 1771607862.85895 "Ferdi.bcf" "Ferdi.bbl" "Ferdi" 1771609785.74759 0
+  "Ferdi.bcf" 1771609785 133788 31085f915cc6f0a67822329d2c5375f9 "pdflatex"
   "references_ferdi.bib" 1771084831 1563 a3daa30c3bc38dc6686a777ba3e0d043 ""
   (generated)
   "Ferdi.bbl"
   "Ferdi.blg"
   (rewritten before read)
-["pdflatex"] 1771609450.65714 "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" "Ferdi.pdf" "Ferdi" 1771609455.46097 0
+["pdflatex"] 1771609781.88215 "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" "Ferdi.pdf" "Ferdi" 1771609785.74875 0
   "../preamble.tex" 1767885714 200 206e1443e8fc9a0aba8b9dcef4b3bb43 ""
   "C:/Users/beckf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769939076 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/beckf/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1767886673 13333486 9da473022eb1e52876ded0402c605b6a ""
@@ -128,13 +128,13 @@
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/beckf/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Ferdi.aux" 1771609455 5573 0b72682da05db99acd9f19a84999d4e9 "pdflatex"
+  "Ferdi.aux" 1771609785 6180 4642b0bd939772d48d56d94318859bcc "pdflatex"
   "Ferdi.bbl" 1771607876 11029 41985a27f492cf6866d65a2b36d6e83b "biber Ferdi"
-  "Ferdi.out" 1771609455 1593 419e7cb98f4bb378f75d903df5285dd1 "pdflatex"
-  "Ferdi.run.xml" 1771609455 2440 45ca60745328d8c263e15231553a2938 "pdflatex"
-  "Ferdi.tex" 1771609449 13320 774a86b116ae7bdc53b8b57f5b3638d4 ""
+  "Ferdi.out" 1771609785 1593 419e7cb98f4bb378f75d903df5285dd1 "pdflatex"
+  "Ferdi.run.xml" 1771609785 2440 45ca60745328d8c263e15231553a2938 "pdflatex"
+  "Ferdi.tex" 1771609776 13421 cc53b3237ae94757da0daf3f27f07c81 ""
   "basis_tf_ferdi.png" 1771084705 45718 76c530ed0d3e9fecbfe0005144d6b1a4 ""
-  "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" 1771609449 13320 774a86b116ae7bdc53b8b57f5b3638d4 ""
+  "d:/beckf/Documents/ML_Projekt_WS2526/Maschine_Learning/Ferdi/Ferdi.tex" 1771609776 13421 cc53b3237ae94757da0daf3f27f07c81 ""
   "in1_ferdi.png" 1771608377 119433 56d0e4fc763c9fd016ba8e18a6e88175 ""
   "in2_ferdi.png" 1771608387 121825 835f863b1008441ee9014d38defeb686 ""
   "in3_ferdi.png" 1771608393 124286 021b4f5542a7899ed0ef142741ed8045 ""

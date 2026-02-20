@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  20 FEB 2026 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  20 FEB 2026 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -567,17 +567,7 @@ Package caption Info: New subtype `subtable' on input line 238.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9.
  (C:\Users\beckf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (Ferdi.aux
-
-LaTeX Warning: Label `fig:ferdi:model1_gen1_tf' multiply defined.
-
-
-LaTeX Warning: Label `fig:ferdi:model1_gen1_tf' multiply defined.
-
-
-LaTeX Warning: Label `fig:ferdi:model1_conf_mat2' multiply defined.
-
-)
+) (Ferdi.aux)
 \openout1 = `Ferdi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -758,24 +748,18 @@ Package pdftex.def Info: model2_gen2_ferdi.png  used on input line 134.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:ferdi:model2_gen1_tf' on page 4 undefined on input line 144.
-
-
-LaTeX Warning: Reference `fig:ferdi:model2_gen2_tf' on page 4 undefined on input line 145.
-
 [4 <./model1_gen1_ferdi.png (PNG copy)>] [5 <./model1_gen2_ferdi.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
 
 [6 <./model2_gen1_ferdi.png (PNG copy)> <./model2_gen2_ferdi.png (PNG copy)>]
-<model1_confmat1_ferdi.png, id=106, 678.25395pt x 626.5809pt>
+<model1_confmat1_ferdi.png, id=108, 678.25395pt x 626.5809pt>
 File: model1_confmat1_ferdi.png Graphic file (type png)
 <use model1_confmat1_ferdi.png>
 Package pdftex.def Info: model1_confmat1_ferdi.png  used on input line 164.
 (pdftex.def)             Requested size: 345.0pt x 318.71066pt.
-<model1_confmat2_ferdi.png, id=107, 678.25395pt x 626.5809pt>
+<model1_confmat2_ferdi.png, id=109, 678.25395pt x 626.5809pt>
 File: model1_confmat2_ferdi.png Graphic file (type png)
 <use model1_confmat2_ferdi.png>
 Package pdftex.def Info: model1_confmat2_ferdi.png  used on input line 171.
@@ -784,49 +768,34 @@ Package pdftex.def Info: model1_confmat2_ferdi.png  used on input line 171.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:ferdi:in1' on page 7 undefined on input line 186.
-
-
-LaTeX Warning: Reference `fig:ferdi:in2' on page 7 undefined on input line 186.
-
-
-LaTeX Warning: Reference `fig:ferdi:in3' on page 7 undefined on input line 186.
-
-
-LaTeX Warning: Reference `fig:ferdi:in4' on page 7 undefined on input line 186.
-
-
-LaTeX Warning: Reference `fig:ferdi:max_probs' on page 7 undefined on input line 187.
-
-<in1_ferdi.png, id=110, 678.25395pt x 626.5809pt>
+<in1_ferdi.png, id=117, 678.25395pt x 626.5809pt>
 File: in1_ferdi.png Graphic file (type png)
 <use in1_ferdi.png>
 Package pdftex.def Info: in1_ferdi.png  used on input line 193.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
-<in2_ferdi.png, id=111, 678.25395pt x 626.5809pt>
+<in2_ferdi.png, id=118, 678.25395pt x 626.5809pt>
 File: in2_ferdi.png Graphic file (type png)
 <use in2_ferdi.png>
-Package pdftex.def Info: in2_ferdi.png  used on input line 201.
+Package pdftex.def Info: in2_ferdi.png  used on input line 202.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
 [7 <./model1_confmat1_ferdi.png>] [8 <./model1_confmat2_ferdi.png>] [9 <./in1_ferdi.png> <./in2_ferdi.png>]
-<in3_ferdi.png, id=134, 678.25395pt x 626.5809pt>
+<in3_ferdi.png, id=142, 678.25395pt x 626.5809pt>
 File: in3_ferdi.png Graphic file (type png)
 <use in3_ferdi.png>
-Package pdftex.def Info: in3_ferdi.png  used on input line 212.
+Package pdftex.def Info: in3_ferdi.png  used on input line 214.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
-<in4_ferdi.png, id=135, 678.25395pt x 626.5809pt>
+<in4_ferdi.png, id=143, 678.25395pt x 626.5809pt>
 File: in4_ferdi.png Graphic file (type png)
 <use in4_ferdi.png>
-Package pdftex.def Info: in4_ferdi.png  used on input line 220.
+Package pdftex.def Info: in4_ferdi.png  used on input line 223.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
-<model1_confidence_ferdi.png, id=136, 611.4042pt x 394.95555pt>
+<model1_confidence_ferdi.png, id=144, 611.4042pt x 394.95555pt>
 File: model1_confidence_ferdi.png Graphic file (type png)
 <use model1_confidence_ferdi.png>
-Package pdftex.def Info: model1_confidence_ferdi.png  used on input line 228.
+Package pdftex.def Info: model1_confidence_ferdi.png  used on input line 232.
 (pdftex.def)             Requested size: 345.0pt x 222.87308pt.
 
-Underfull \hbox (badness 1264) in paragraph at lines 229--229
+Underfull \hbox (badness 1264) in paragraph at lines 233--233
 []\OT1/lmr/m/n/10 (+20) Figure 11: |Max-i-male Wahrschein-lichkeiten f^^?ur den n^^?achsten To-ken in
  []
 
@@ -838,13 +807,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Ferdi.out' has not changed.
 (rerunfilecheck)             Checksum: 419E7CB98F4BB378F75D903DF5285DD1;1593.
 Package logreq Info: Writing requests to 'Ferdi.run.xml'.
@@ -852,11 +814,11 @@ Package logreq Info: Writing requests to 'Ferdi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21513 strings out of 467871
- 382158 string characters out of 5418377
- 1353671 words of memory out of 5000000
- 50039 multiletter control sequences out of 15000+600000
- 661666 words of font info for 107 fonts, out of 8000000 for 9000
+ 21521 strings out of 467871
+ 382278 string characters out of 5418377
+ 1354337 words of memory out of 5000000
+ 50043 multiletter control sequences out of 15000+600000
+ 661832 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,15n,77p,1063b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -866,9 +828,9 @@ pdfTeX warning (dest): name{cite.0@vaswani2017attention_ferdi} has been referenc
 pdfTeX warning (dest): name{cite.0@chollet2021learning_ferdi} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/beckf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Ferdi.pdf (11 pages, 1048986 bytes).
+Output written on Ferdi.pdf (11 pages, 1049767 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
+ 222 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
  20618 words of extra memory for PDF output out of 20736 (max. 10000000)
 

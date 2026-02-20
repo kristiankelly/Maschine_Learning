@@ -126,14 +126,14 @@ schlechter.
     \centering
     \includegraphics[width=1\textwidth]{model2_gen1_ferdi.png}
     \caption{Generiertes Musikstück mit $\text{temp}=1.2$, die ersten beiden Takte sind wieder vorgegeben (C)}
-    \label{fig:ferdi:model1_gen1_tf}
+    \label{fig:ferdi:model2_gen1_tf}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{model2_gen2_ferdi.png}
     \caption{Generiertes Musikstück mit $\text{temp}=1$, wir geben wieder keine Noten vor (D)}
-    \label{fig:ferdi:model1_gen1_tf}
+    \label{fig:ferdi:model2_gen2_tf}
 \end{figure}
 
 Wie oben gesehen hat der Transformer-Ansatz ebenfalls Probleme mit der Akkord-Harmonie, für RNNs hat hier ja die
@@ -192,6 +192,7 @@ deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix
     \centering
     \includegraphics[height=0.35\textheight, keepaspectratio]{in1_ferdi.png}
     \caption{Input-Länge von 1}
+    \label{fig:ferdi:in1}
   \end{subfigure}
   
   \vspace{0.5cm} % Etwas Luft zwischen den Bildern
@@ -200,6 +201,7 @@ deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix
     \centering
     \includegraphics[height=0.35\textheight, keepaspectratio]{in2_ferdi.png}
     \caption{Input-Länge von 2}
+    \label{fig:ferdi:in2}
   \end{subfigure}
   \caption{Entwicklung der Confusion-Matrizen (Teil 1)}
 \end{figure}
@@ -211,6 +213,7 @@ deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix
     \centering
     \includegraphics[height=0.35\textheight, keepaspectratio]{in3_ferdi.png}
     \caption{Input-Länge von 3}
+    \label{fig:ferdi:in3}
   \end{subfigure}
   
   \vspace{0.5cm} % Etwas Luft zwischen den Bildern
@@ -219,15 +222,16 @@ deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix
     \centering
     \includegraphics[height=0.35\textheight, keepaspectratio]{in4_ferdi.png}
     \caption{Input-Länge von 4}
+    \label{fig:ferdi:in4}
   \end{subfigure}
-  \caption{Entwicklung der Confusion-Matrizen (Teil 1)}
+  \caption{Entwicklung der Confusion-Matrizen (Teil 2)}
 \end{figure}
 
  \begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{model1_confidence_ferdi.png}
     \caption{Maximale Wahrscheinlichkeiten für den nächsten Token in Abhängigkeit der Input-Länge}
-    \label{fig:ferdi:model1_conf_mat2}
+    \label{fig:ferdi:max_probs}
 \end{figure}
 
 \end{document}
