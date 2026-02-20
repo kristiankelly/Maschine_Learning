@@ -55,7 +55,7 @@ Da die Daten sehr unausgeglichen sind (so hat zum Beispiel Bach am meisten mit 3
 Dabei gehen aber im schlimmsten Fall (von Bach) 29.160 Datenpunkte, also über 80\% der Informationen verloren. Das ist natürlich nicht gut für die Klassifikation, wie sich später auch zeigen wird.
 
 
-Trainiert man einen Random Forest mit den Default-Werten, so erhält man eine Accuracy von 27\%. Also schlecht. Setzt man den Defaultwert von \emph{n\_estimators} (die Anzahl
+Trainiert man einen Random Forest mit den Default-Werten (\cite{RandomForestClassifier}), so erhält man eine Accuracy von 27\%. Also schlecht. Setzt man den Defaultwert von \emph{n\_estimators} (die Anzahl
 der Bäume im Forest) höher, so verbessert sich die Accuracy. Bei beispielsweise 1.000 Bäumen hat man eine Genauigkeit von 31\%, was besser aber immernoch schlecht ist.
 Das Problem, wenn man \emph{n\_estimators} höher setzt, ist, dass es länger braucht zum Laden. 
 Betrachtet man die Confusionmatrix (\ref{fig:Klassifikation_ohne_Epochen}), kann man folgendes erkennen:
@@ -81,9 +81,9 @@ auf die Idee gekommen im zweiten Versuch über zwei (bzw. dann fünf) Modelle zu
 \subsubsection{Modell zur Klasssifizierung in die Epochen}
 Wir trainieren zuerst nach den verschiedenen Epochen, in welchen die Künstler gelebt haben. Diese sind:
 \begin{itemize}
-    \item[\textbf{Barock}]: Scarlatti, Vivaldi, Bach, Händel, mit 61.051 Datenpunkten,
-    \item[\textbf{Klassik}]: Mozart, Beethoven, mit 54.554 und
-    \item[\textbf{Romantik}]: Schubert, Chopin, mit 23.013.
+    \item[\textbf{Barock}]: Scarlatti, Vivaldi, Bach, Händel, mit 61.051 Datenpunkten (\cite{Wikipedia_Barockmusik}),
+    \item[\textbf{Klassik}]: Mozart, Beethoven, mit 54.554 (\cite{Wikipedia_Klassik}) und
+    \item[\textbf{Romantik}]: Schubert, Chopin, mit 23.013 (\cite{Wikipedia_Romantik}).
 \end{itemize}
 
 Die Accuracy beim Einordnen der Stücke in ihre jeweiligen Epochen beträgt 55\%. Auch hier verlieren wir wieder viele Daten beim Balancieren, da bei der Zuordnung zu den verschiedenen Zeitabschnitten grosse Unterschiede
@@ -121,18 +121,21 @@ In einem neuen Versuch verwenden wir anstatt des RandomForestClassifiers eine Su
 Bei der SVC werden die Objekte in Klassen unterteilt, wobei diese durch Vektoren im Vektorraum dargestellt werden. Der Algorithmus versucht dann, die Objekte durch Hyperebenen so zu trennen, dass der Abstand der Vektoren, welche
 am nächsten an der Hyperebene liegen maximiert wird. Gibt man dem Modell später neue unbekannte Daten, versucht es, diese in die vorgelernten Klassen einzuteilen, anhand der Trennlinien, die zuvor antrainiert wurden \parencite{Wikipedia_SVM}.
 
-Da dies aber vorallem für viele Daten sehr aufwändig ist, haben wir die Daten pro Künstler nur auf 603 (also 1/10 von dem, was wir aufgrund des Balancieren verwenden könnten) beschränkt. Ohne diese Maßnahme wäre es nicht möglich gewesen,
+Da dies aber vorallem für viele Daten sehr aufwändig ist, haben wir die Daten pro Künstler nur auf 603 (also 1/10 von dem, was wir aufgrund des Balancieren verwenden könnten) beschränkt. Ohne diese Maßnahme wäre es aufgrund der Ladedauer nicht möglich gewesen,
 einen RandomizedSearchCV anzuwenden, welcher die besten Parameter für die Support Vector Classification sucht.
 
-Mit den Standardparametern der Support Vektor Klassifizierung erhält man eine Accuracy von nur 18\%.
+Mit den Standardparametern der Support Vektor Klassifizierung (\cite{SupportVectorClassifier}) erhält man eine Accuracy von nur 18\%.
 
-Die Suche nach den besten Parametern ergibt eine Genauigkeit von ---\%. Diese Parameter sind:
+Die Suche nach den besten Parametern ergibt eine Genauigkeit von 23\%. Diese Parameter sind:
 \begin{itemize}
-  \item[\textbf{C}]:
-  \item[\textbf{Kernel}]: Braucht man, da die SVC normalerweise nur linear sein würde. Das Modell versucht also die Daten linear zu trennen. Dies ist aber nicht möglich, da die gegeben Daten nicht linear sind. Also verwendet man einen Kernel, um auch gekrümmte Schnittlinien zu erhalten.
-  \item[\textbf{Degree}]:
-  \item[\textbf{Gamma}]: Diesen Koeffizienten braucht man nur, wenn der Kernel "rbf", "poly" oder "sigmoid" ist. Wir haben aber nur zwischen Poly, Sigmoid und Linear den besten Kerneltyp gesucht. Somit würde $\gamma$ nur bei Poly oder Sigmoid verwendet werden.
-  \item[\textbf{Tol}]:
+  \item[\textbf{C}]: 0.5, 
+  \item[\textbf{Kernel}]: Poly, (Diesen Parameter braucht man, da die SVC normalerweise nur linear sein würde. Das Modell versucht also die Daten linear zu trennen. Dies ist aber nicht möglich, da die gegeben Daten nicht linear sind. Also verwendet man einen Kernel, um auch gekrümmte Schnittlinien zu erhalten.)
+  \item[\textbf{Degree}]: 3, 
+  \item[\textbf{Gamma}]: auto, (Diesen Koeffizienten braucht man, wenn der Kernel "rbf", "poly" oder "sigmoid" ist. Wir haben aber nur zwischen Poly, Sigmoid und Linear den besten Kerneltyp gesucht. Somit würde $\gamma$ nur bei Poly oder Sigmoid verwendet werden.)
+  \item[\textbf{Tol}]: 0.01.
 \end{itemize}
+
+Dementsprechend ist die beste Methode für eine Klassifizierung, über die Zeitepochen die Stücke einzuteilen und dann innerhalb dieser nochmals spezifisch die Künstler zuzuordnen. Jedoch ist auch dieses nicht gut, da nur eine Genauigkeit von etwa 40\% erreicht werden kann.
+Das Problem liegt dabei daran, dass sich die Stücke von der Abfolge der Noten (der Melodie) nicht weit genug unterscheiden, dass beim Trainieren ein Unterschied erkannt wird.
 
 \end{document}

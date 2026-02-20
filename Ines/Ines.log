@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.5)  19 FEB 2026 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.5)  20 FEB 2026 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,18 +668,18 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 64
  (C:\Users\inesv\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Klassifikation_ohne_Epochen.png, id=61, 631.6398pt x 635.2533pt>
+<Klassifikation_ohne_Epochen.png, id=62, 631.6398pt x 635.2533pt>
 File: Klassifikation_ohne_Epochen.png Graphic file (type png)
 <use Klassifikation_ohne_Epochen.png>
 Package pdftex.def Info: Klassifikation_ohne_Epochen.png  used on input line 74.
 (pdftex.def)             Requested size: 345.0pt x 346.97679pt.
  [2{C:/Users/inesv/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [3 <./Klassifikation_ohne_Epochen.png>]
-<Innerhalb_der_Epochen.png, id=75, 877.02657pt x 309.40594pt>
+<Innerhalb_der_Epochen.png, id=83, 877.02657pt x 309.40594pt>
 File: Innerhalb_der_Epochen.png Graphic file (type png)
 <use Innerhalb_der_Epochen.png>
 Package pdftex.def Info: Innerhalb_der_Epochen.png  used on input line 99.
 (pdftex.def)             Requested size: 345.0pt x 121.7112pt.
-<Verbinden_der_Modelle.png, id=76, 536.75531pt x 42.91031pt>
+<Verbinden_der_Modelle.png, id=84, 536.75531pt x 42.91031pt>
 File: Verbinden_der_Modelle.png Graphic file (type png)
 <use Verbinden_der_Modelle.png>
 Package pdftex.def Info: Verbinden_der_Modelle.png  used on input line 109.
@@ -726,23 +726,38 @@ Package logreq Info: Writing requests to 'Ines.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20399 strings out of 467871
- 359308 string characters out of 5418377
- 1334309 words of memory out of 5000000
- 48936 multiletter control sequences out of 15000+600000
- 662959 words of font info for 105 fonts, out of 8000000 for 9000
+ 20422 strings out of 467871
+ 360196 string characters out of 5418377
+ 1334541 words of memory out of 5000000
+ 48952 multiletter control sequences out of 15000+600000
+ 662998 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,6n,70p,1091b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+pdfTeX warning (dest): name{cite.0@SupportVectorClassifier} has been referenced but does not exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{cite.0@Wikipedia_SVM} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@Wikipedia_Romantik} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@Wikipedia_Klassik} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@Wikipedia_Barockmusik} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@RandomForestClassifier} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@Dataset} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/inesv/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/inesv/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/inesv/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/inesv/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/inesv/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
-Output written on Ines.pdf (5 pages, 323817 bytes).
+Output written on Ines.pdf (5 pages, 325943 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 138 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  20568 words of extra memory for PDF output out of 20736 (max. 10000000)
 

@@ -56,6 +56,176 @@
       \verb https://de.wikipedia.org/wiki/Support_Vector_Machine
       \endverb
     \endentry
+    \entry{Wikipedia_Barockmusik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3d2972f5050e03e16228979c17d95051}{%
+           family={Kurzstuekmeister},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \strng{bibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorbibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authornamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Barockmusik}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Barockmusik#Zeitliche_Einteilung_und_regionale_Stile
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Barockmusik#Zeitliche_Einteilung_und_regionale_Stile
+      \endverb
+    \endentry
+    \entry{Wikipedia_Klassik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3d2972f5050e03e16228979c17d95051}{%
+           family={Kurzstuekmeister},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \strng{bibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorbibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authornamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Musik der Wiender Klassik}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Wiener_Klassik
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Wiener_Klassik
+      \endverb
+    \endentry
+    \entry{RandomForestClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{1}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Random Forest}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+    \endentry
+    \entry{SupportVectorClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{2}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Support Vector Classification}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+    \endentry
+    \entry{Wikipedia_Romantik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24dee1a65b774bf923ea16b67015ba31}{%
+           family={Thornard},
+           familyi={T\bibinitperiod},
+           given={Musicus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{fullhash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{fullhashraw}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{bibnamehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authorbibnamehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authornamehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authorfullhash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authorfullhashraw}{24dee1a65b774bf923ea16b67015ba31}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Musik der Romantik}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Musik_der_Romantik
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Musik_der_Romantik
+      \endverb
+    \endentry
     \entry{Dataset}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b5a4c9729940d0782a11f9ae70ff24}{%
@@ -124,6 +294,176 @@
       \endverb
       \verb{url}
       \verb https://de.wikipedia.org/wiki/Support_Vector_Machine
+      \endverb
+    \endentry
+    \entry{Wikipedia_Barockmusik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3d2972f5050e03e16228979c17d95051}{%
+           family={Kurzstuekmeister},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \strng{bibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorbibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authornamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Barockmusik}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Barockmusik#Zeitliche_Einteilung_und_regionale_Stile
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Barockmusik#Zeitliche_Einteilung_und_regionale_Stile
+      \endverb
+    \endentry
+    \entry{Wikipedia_Klassik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3d2972f5050e03e16228979c17d95051}{%
+           family={Kurzstuekmeister},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{fullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \strng{bibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorbibnamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authornamehash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhash}{3d2972f5050e03e16228979c17d95051}
+      \strng{authorfullhashraw}{3d2972f5050e03e16228979c17d95051}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Musik der Wiender Klassik}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Wiener_Klassik
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Wiener_Klassik
+      \endverb
+    \endentry
+    \entry{RandomForestClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{1}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Random Forest}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+    \endentry
+    \entry{SupportVectorClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{2}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Support Vector Classification}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+    \endentry
+    \entry{Wikipedia_Romantik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24dee1a65b774bf923ea16b67015ba31}{%
+           family={Thornard},
+           familyi={T\bibinitperiod},
+           given={Musicus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{fullhash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{fullhashraw}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{bibnamehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authorbibnamehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authornamehash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authorfullhash}{24dee1a65b774bf923ea16b67015ba31}
+      \strng{authorfullhashraw}{24dee1a65b774bf923ea16b67015ba31}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Musik der Romantik}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Musik_der_Romantik
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Musik_der_Romantik
       \endverb
     \endentry
     \entry{Dataset}{misc}{}{}
