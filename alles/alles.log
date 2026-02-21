@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.3)  21 FEB 2026 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.3)  21 FEB 2026 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -82,7 +82,38 @@ Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count289
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (../preamble.tex (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count290
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+\U@D=\dimen160
+\l@unhyphenated=\language79
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count291
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-ngerman.tex)
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 4320.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ldf
+Language: ngerman 
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-german.def
+Package babel Info: Making " an active character on input line 470.
+))) (../preamble.tex (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
 
@@ -92,21 +123,21 @@ Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
-\ex@=\dimen160
+\ex@=\dimen161
 )) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen161
+\pmbraise@=\dimen162
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count290
+\inf@bad=\count292
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count291
-\leftroot@=\count292
+\uproot@=\count293
+\leftroot@=\count294
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count293
-\DOTSCASE@=\count294
+\classnum@=\count295
+\DOTSCASE@=\count296
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -116,30 +147,30 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen162
+\big@size=\dimen163
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count295
+\macc@depth=\count297
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count296
+\c@MaxMatrixCols=\count298
 \dotsspace@=\muskip17
-\c@parentequation=\count297
-\dspbrk@lvl=\count298
+\c@parentequation=\count299
+\dspbrk@lvl=\count300
 \tag@help=\toks22
-\row@=\count299
-\column@=\count300
-\maxfields@=\count301
+\row@=\count301
+\column@=\count302
+\maxfields@=\count303
 \andhelp@=\toks23
-\eqnshift@=\dimen163
-\alignsep@=\dimen164
-\tagshift@=\dimen165
-\tagwidth@=\dimen166
-\totwidth@=\dimen167
-\lineht@=\dimen168
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
 \@envbody=\toks24
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -204,20 +235,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count302
+\etb@tempcnta=\count304
 )
 \MT@toks=\toks32
 \MT@tempbox=\box58
-\MT@count=\count303
+\MT@count=\count305
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
 \MT@prot@toks=\toks33
 LaTeX Info: Redefining \rightprotrusion on input line 1107.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen169
+\MT@outer@kern=\dimen170
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count304
+\MT@listname@count=\count306
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -249,7 +280,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count305
+\lrq@indent=\count307
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
@@ -258,49 +289,49 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count306
-\c@listtotal=\count307
-\c@listcount=\count308
-\c@liststart=\count309
-\c@liststop=\count310
-\c@citecount=\count311
-\c@citetotal=\count312
-\c@multicitecount=\count313
-\c@multicitetotal=\count314
-\c@instcount=\count315
-\c@maxnames=\count316
-\c@minnames=\count317
-\c@maxitems=\count318
-\c@minitems=\count319
-\c@citecounter=\count320
-\c@maxcitecounter=\count321
-\c@savedcitecounter=\count322
-\c@uniquelist=\count323
-\c@uniquename=\count324
-\c@refsection=\count325
-\c@refsegment=\count326
-\c@maxextratitle=\count327
-\c@maxextratitleyear=\count328
-\c@maxextraname=\count329
-\c@maxextradate=\count330
-\c@maxextraalpha=\count331
-\c@abbrvpenalty=\count332
-\c@highnamepenalty=\count333
-\c@lownamepenalty=\count334
-\c@maxparens=\count335
-\c@parenlevel=\count336
-\blx@tempcnta=\count337
-\blx@tempcntb=\count338
-\blx@tempcntc=\count339
-\c@blx@maxsection=\count340
-\blx@maxsegment@0=\count341
-\blx@notetype=\count342
-\blx@parenlevel@text=\count343
-\blx@parenlevel@foot=\count344
-\blx@sectionciteorder@0=\count345
-\blx@sectionciteorderinternal@0=\count346
-\blx@entrysetcounter=\count347
-\blx@biblioinstance=\count348
+\c@tabx@nest=\count308
+\c@listtotal=\count309
+\c@listcount=\count310
+\c@liststart=\count311
+\c@liststop=\count312
+\c@citecount=\count313
+\c@citetotal=\count314
+\c@multicitecount=\count315
+\c@multicitetotal=\count316
+\c@instcount=\count317
+\c@maxnames=\count318
+\c@minnames=\count319
+\c@maxitems=\count320
+\c@minitems=\count321
+\c@citecounter=\count322
+\c@maxcitecounter=\count323
+\c@savedcitecounter=\count324
+\c@uniquelist=\count325
+\c@uniquename=\count326
+\c@refsection=\count327
+\c@refsegment=\count328
+\c@maxextratitle=\count329
+\c@maxextratitleyear=\count330
+\c@maxextraname=\count331
+\c@maxextradate=\count332
+\c@maxextraalpha=\count333
+\c@abbrvpenalty=\count334
+\c@highnamepenalty=\count335
+\c@lownamepenalty=\count336
+\c@maxparens=\count337
+\c@parenlevel=\count338
+\blx@tempcnta=\count339
+\blx@tempcntb=\count340
+\blx@tempcntc=\count341
+\c@blx@maxsection=\count342
+\blx@maxsegment@0=\count343
+\blx@notetype=\count344
+\blx@parenlevel@text=\count345
+\blx@parenlevel@foot=\count346
+\blx@sectionciteorder@0=\count347
+\blx@sectionciteorderinternal@0=\count348
+\blx@entrysetcounter=\count349
+\blx@biblioinstance=\count350
 \labelnumberwidth=\skip59
 \labelalphawidth=\skip60
 \biblabelsep=\skip61
@@ -309,12 +340,12 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibinitsep=\skip64
 \bibparsep=\skip65
 \bibhang=\skip66
-\blx@bcfin=\read2
+\blx@bcfin=\read3
 \blx@bcfout=\write3
-\blx@langwohyphens=\language79
-\c@mincomprange=\count349
-\c@maxcomprange=\count350
-\c@mincompwidth=\count351
+\blx@langwohyphens=\language80
+\c@mincomprange=\count351
+\c@maxcomprange=\count352
+\c@mincompwidth=\count353
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -327,84 +358,84 @@ File: apa.dbx 2025/08/27 v9.20 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count352
-\c@savedafterword=\count353
-\c@annotator=\count354
-\c@savedannotator=\count355
-\c@author=\count356
-\c@savedauthor=\count357
-\c@bookauthor=\count358
-\c@savedbookauthor=\count359
-\c@commentator=\count360
-\c@savedcommentator=\count361
-\c@editor=\count362
-\c@savededitor=\count363
-\c@editora=\count364
-\c@savededitora=\count365
-\c@editorb=\count366
-\c@savededitorb=\count367
-\c@editorc=\count368
-\c@savededitorc=\count369
-\c@foreword=\count370
-\c@savedforeword=\count371
-\c@holder=\count372
-\c@savedholder=\count373
-\c@introduction=\count374
-\c@savedintroduction=\count375
-\c@namea=\count376
-\c@savednamea=\count377
-\c@nameb=\count378
-\c@savednameb=\count379
-\c@namec=\count380
-\c@savednamec=\count381
-\c@translator=\count382
-\c@savedtranslator=\count383
-\c@shortauthor=\count384
-\c@savedshortauthor=\count385
-\c@shorteditor=\count386
-\c@savedshorteditor=\count387
-\c@narrator=\count388
-\c@savednarrator=\count389
-\c@execproducer=\count390
-\c@savedexecproducer=\count391
-\c@execdirector=\count392
-\c@savedexecdirector=\count393
-\c@with=\count394
-\c@savedwith=\count395
-\c@labelname=\count396
-\c@savedlabelname=\count397
-\c@institution=\count398
-\c@savedinstitution=\count399
-\c@lista=\count400
-\c@savedlista=\count401
-\c@listb=\count402
-\c@savedlistb=\count403
-\c@listc=\count404
-\c@savedlistc=\count405
-\c@listd=\count406
-\c@savedlistd=\count407
-\c@liste=\count408
-\c@savedliste=\count409
-\c@listf=\count410
-\c@savedlistf=\count411
-\c@location=\count412
-\c@savedlocation=\count413
-\c@organization=\count414
-\c@savedorganization=\count415
-\c@origlocation=\count416
-\c@savedoriglocation=\count417
-\c@origpublisher=\count418
-\c@savedorigpublisher=\count419
-\c@publisher=\count420
-\c@savedpublisher=\count421
-\c@language=\count422
-\c@savedlanguage=\count423
-\c@origlanguage=\count424
-\c@savedoriglanguage=\count425
-\c@citation=\count426
-\c@savedcitation=\count427
-\c@pageref=\count428
-\c@savedpageref=\count429
+\c@afterword=\count354
+\c@savedafterword=\count355
+\c@annotator=\count356
+\c@savedannotator=\count357
+\c@author=\count358
+\c@savedauthor=\count359
+\c@bookauthor=\count360
+\c@savedbookauthor=\count361
+\c@commentator=\count362
+\c@savedcommentator=\count363
+\c@editor=\count364
+\c@savededitor=\count365
+\c@editora=\count366
+\c@savededitora=\count367
+\c@editorb=\count368
+\c@savededitorb=\count369
+\c@editorc=\count370
+\c@savededitorc=\count371
+\c@foreword=\count372
+\c@savedforeword=\count373
+\c@holder=\count374
+\c@savedholder=\count375
+\c@introduction=\count376
+\c@savedintroduction=\count377
+\c@namea=\count378
+\c@savednamea=\count379
+\c@nameb=\count380
+\c@savednameb=\count381
+\c@namec=\count382
+\c@savednamec=\count383
+\c@translator=\count384
+\c@savedtranslator=\count385
+\c@shortauthor=\count386
+\c@savedshortauthor=\count387
+\c@shorteditor=\count388
+\c@savedshorteditor=\count389
+\c@narrator=\count390
+\c@savednarrator=\count391
+\c@execproducer=\count392
+\c@savedexecproducer=\count393
+\c@execdirector=\count394
+\c@savedexecdirector=\count395
+\c@with=\count396
+\c@savedwith=\count397
+\c@labelname=\count398
+\c@savedlabelname=\count399
+\c@institution=\count400
+\c@savedinstitution=\count401
+\c@lista=\count402
+\c@savedlista=\count403
+\c@listb=\count404
+\c@savedlistb=\count405
+\c@listc=\count406
+\c@savedlistc=\count407
+\c@listd=\count408
+\c@savedlistd=\count409
+\c@liste=\count410
+\c@savedliste=\count411
+\c@listf=\count412
+\c@savedlistf=\count413
+\c@location=\count414
+\c@savedlocation=\count415
+\c@organization=\count416
+\c@savedorganization=\count417
+\c@origlocation=\count418
+\c@savedoriglocation=\count419
+\c@origpublisher=\count420
+\c@savedorigpublisher=\count421
+\c@publisher=\count422
+\c@savedpublisher=\count423
+\c@language=\count424
+\c@savedlanguage=\count425
+\c@origlanguage=\count426
+\c@savedoriglanguage=\count427
+\c@citation=\count428
+\c@savedcitation=\count429
+\c@pageref=\count430
+\c@savedpageref=\count431
 \shorthandwidth=\skip67
 \shortjournalwidth=\skip68
 \shortserieswidth=\skip69
@@ -428,19 +459,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count430
-\c@textcitetotal=\count431
-\c@textcitemaxnames=\count432
-\c@biburlbigbreakpenalty=\count433
-\c@biburlbreakpenalty=\count434
-\c@biburlnumpenalty=\count435
-\c@biburlucpenalty=\count436
-\c@biburllcpenalty=\count437
+\c@textcitecount=\count432
+\c@textcitetotal=\count433
+\c@textcitemaxnames=\count434
+\c@biburlbigbreakpenalty=\count435
+\c@biburlbreakpenalty=\count436
+\c@biburlnumpenalty=\count437
+\c@biburlucpenalty=\count438
+\c@biburllcpenalty=\count439
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count438
+\c@smartand=\count440
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
@@ -450,8 +481,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count439
-\c@bbx:relatedtotal=\count440
+\c@bbx:relatedcount=\count441
+\c@bbx:relatedtotal=\count442
 )
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defined, overwriting.
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already defined, overwriting.
@@ -491,7 +522,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2025-12-24 L3 programming layer (loader) 
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count441
+\l__color_backend_stack_int=\count443
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-12-24 L3 programming layer (loader) 
@@ -516,13 +547,13 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count442
+\c@section@level=\count444
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen170
-\Hy@linkcounter=\count443
-\Hy@pagecounter=\count444
+\@linkdim=\dimen171
+\Hy@linkcounter=\count445
+\Hy@pagecounter=\count446
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -530,7 +561,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count445
+\Hy@SavedSpaceFactor=\count447
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -543,17 +574,17 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count446
+\c@Hy@tempcnt=\count448
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen171
+\XeTeXLinkMargin=\dimen172
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count447
-\Field@Width=\dimen172
-\Fld@charsize=\dimen173
+\Fld@menulength=\count449
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -561,15 +592,15 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count448
-\c@Item=\count449
-\c@Hfootnote=\count450
+\Hy@abspage=\count450
+\c@Item=\count451
+\c@Hfootnote=\count452
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count451
-\c@bookmark@seq@number=\count452
+\Fld@listcount=\count453
+\c@bookmark@seq@number=\count454
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -579,44 +610,51 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip81
 )
-\@quotelevel=\count453
-\@quotereset=\count454
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 18.
- (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count455
+\@quotereset=\count456
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 20.
+(C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (alles.aux)
+) (alles.aux
+Package babel Info: 'ngerman' activates 'german' shorthands.
+(babel)             Reported on input line 9.
+)
 \openout1 = `alles.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count455
-\scratchdimen=\dimen174
+\scratchcounter=\count457
+\scratchdimen=\dimen175
 \scratchbox=\box59
-\nofMPsegments=\count456
-\nofMParguments=\count457
+\nofMPsegments=\count458
+\nofMParguments=\count459
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count458
-\MPscratchDim=\dimen175
-\MPnumerator=\count459
-\makeMPintoPDFobject=\count460
+\MPscratchCnt=\count460
+\MPscratchDim=\dimen176
+\MPnumerator=\count461
+\makeMPintoPDFobject=\count462
 \everyMPtoPDFconversion=\toks35
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -627,13 +665,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 18.
-Package microtype Info: Applying patch `item' on input line 18.
-Package microtype Info: Applying patch `toc' on input line 18.
-Package microtype Info: Applying patch `eqnum' on input line 18.
-Package microtype Info: Applying patch `footnote' on input line 18.
-Package microtype Info: Applying patch `verbatim' on input line 18.
-LaTeX Info: Redefining \microtypesetup on input line 18.
+LaTeX Info: Redefining \microtypecontext on input line 20.
+Package microtype Info: Applying patch `item' on input line 20.
+Package microtype Info: Applying patch `toc' on input line 20.
+Package microtype Info: Applying patch `eqnum' on input line 20.
+Package microtype Info: Applying patch `footnote' on input line 20.
+Package microtype Info: Applying patch `verbatim' on input line 20.
+LaTeX Info: Redefining \microtypesetup on input line 20.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -647,27 +685,35 @@ Package microtype Info: No adjustment of character kerning.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
-Package biblatex Info: ... file 'english-apa.lbx' found.
- (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\english-apa.lbx
-File: english-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load language 'american' -> 'american-apa'...
-Package biblatex Info: ... file 'american-apa.lbx' found.
- (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\american-apa.lbx
-File: american-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
-Package biblatex Info: Trying to load language 'american'...
-Package biblatex Info: ... file 'american.lbx' found.
- (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\american.lbx
-File: american.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'ngerman' -> 'ngerman-apa'...
+Package biblatex Info: ... file 'ngerman-apa.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\ngerman-apa.lbx
+File: ngerman-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
+File: ngerman.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german' -> 'german-apa'...
+Package biblatex Info: ... file 'german-apa.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\german-apa.lbx
+File: german-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)))
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
+File: ngerman.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german' -> 'german-apa'...
+Package biblatex Info: ... file 'german-apa.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\german-apa.lbx
+File: german-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+ (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -677,54 +723,54 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'alles.bbl' found.
  (alles.bbl)
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
-Package hyperref Info: Link coloring OFF on input line 18.
+Package biblatex Info: Reference section=0 on input line 20.
+Package biblatex Info: Reference segment=0 on input line 20.
+Package hyperref Info: Link coloring OFF on input line 20.
  (alles.out) (alles.out)
 \@outlinefile=\write4
 \openout4 = `alles.out'.
 
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 21.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 23.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 21.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 23.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 21.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 23.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 21.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+(Font)              <6> on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (85.53372pt too wide) in paragraph at lines 21--21
+Overfull \hbox (85.53372pt too wide) in paragraph at lines 23--23
  [][] 
  []
 
 (alles.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 3.
+(Font)              <10> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <5> on input line 4.
  [1
 
 {C:/Users/kkwie/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}])
@@ -734,14 +780,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <./images/Typisches_stück.png, id=143, 471.7625pt x 170.13562pt>
 File: ./images/Typisches_stück.png Graphic file (type png)
 <use ./images/Typisches_stück.png>
-Package pdftex.def Info: ./images/Typisches_stück.png  used on input line 43.
+Package pdftex.def Info: ./images/Typisches_stück.png  used on input line 45.
 (pdftex.def)             Requested size: 345.0pt x 124.42122pt.
- (../Ines/Ines.tex [2 <./images/Typisches_stück.png>]
-Overfull \hbox (5.96892pt too wide) in paragraph at lines 27--29
-[]\OT1/lmr/m/n/10 (-20) K^^?unstler mit weniger als 100 St^^?ucken sind beispiel-sweise: Pachel-bel, Jakobowski
- []
-
-[3]
+ (../Ines/Ines.tex [2 <./images/Typisches_stück.png>] [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 53.
  (C:\Users\kkwie\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -769,13 +810,8 @@ File: ./images/Struktur_des_Chorals.png Graphic file (type png)
 Package pdftex.def Info: ./images/Struktur_des_Chorals.png  used on input line 9.
 (pdftex.def)             Requested size: 345.0pt x 187.34831pt.
  [8{C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./images/Struktur_des_Chorals.png>]
-Overfull \hbox (11.53545pt too wide) in paragraph at lines 31--33
-\OT1/lmr/m/n/10 (-20) und wir nehmen wieder die let-zten $\OML/lmm/m/it/10 L$ \OT1/lmr/m/n/10 (-20) Noten, um die n^^?achsten $\OML/lmm/m/it/10 N$ \OT1/lmr/m/n/10 (-20) Noten vorherzusagen.
- []
-
-
-Overfull \hbox (51.38956pt too wide) in paragraph at lines 34--36
-\OT1/lmr/m/n/10 (-20) dateien enth^^?alt: []$https : / / www . kaggle . com / code / kristiankelly / audiodateien-[]fuer-[]ausarbeitung$[] 
+Overfull \hbox (55.004pt too wide) in paragraph at lines 34--36
+\OT1/lmr/m/n/10 (-20) oda-tei-en enth[]alt: []$https : / / www . kaggle . com / code / kristiankelly / audiodateien-[]fuer-[]ausarbeitung$[] 
  []
 
 <./images/Model_N=4,L=32,O=1.png, id=224, 272.51813pt x 178.16562pt>
@@ -825,6 +861,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Overfull \hbox (51.7316pt too wide) in paragraph at lines 95--114
  [][] 
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 114--114
+[]\OT1/lmr/m/n/10 (+20) Tabelle 1: |Mu-si-ka-li-sche In-ter-val-le von Pri-me bis Ok-ta-ve mit Kon-so-
  []
 
 [11 <./images/Musik_Modell_1.png>]
@@ -900,14 +941,14 @@ Package pdftex.def Info: ./images/model2_gen2_ferdi.png  used on input line 124.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./images/model1_gen1_ferdi.png (PNG copy)> <./images/model1_gen2_ferdi.png (PNG copy)>] [19 <./images/model2_gen1_ferdi.png (PNG copy)> <./images/model2_gen2_ferdi.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
 
  []
 
 <./images/model1_confmat1_ferdi.png, id=333, 678.25395pt x 626.5809pt>
 File: ./images/model1_confmat1_ferdi.png Graphic file (type png)
 <use ./images/model1_confmat1_ferdi.png>
-Package pdftex.def Info: ./images/model1_confmat1_ferdi.png  used on input line 154.
+Package pdftex.def Info: ./images/model1_confmat1_ferdi.png  used on input line 155.
 (pdftex.def)             Requested size: 345.0pt x 318.71066pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -915,7 +956,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./images/model1_confmat2_ferdi.png, id=334, 678.25395pt x 626.5809pt>
 File: ./images/model1_confmat2_ferdi.png Graphic file (type png)
 <use ./images/model1_confmat2_ferdi.png>
-Package pdftex.def Info: ./images/model1_confmat2_ferdi.png  used on input line 161.
+Package pdftex.def Info: ./images/model1_confmat2_ferdi.png  used on input line 162.
 (pdftex.def)             Requested size: 345.0pt x 318.71066pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -923,33 +964,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./images/in1_ferdi.png, id=342, 678.25395pt x 626.5809pt>
 File: ./images/in1_ferdi.png Graphic file (type png)
 <use ./images/in1_ferdi.png>
-Package pdftex.def Info: ./images/in1_ferdi.png  used on input line 183.
+Package pdftex.def Info: ./images/in1_ferdi.png  used on input line 184.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
 <./images/in2_ferdi.png, id=343, 678.25395pt x 626.5809pt>
 File: ./images/in2_ferdi.png Graphic file (type png)
 <use ./images/in2_ferdi.png>
-Package pdftex.def Info: ./images/in2_ferdi.png  used on input line 192.
+Package pdftex.def Info: ./images/in2_ferdi.png  used on input line 193.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
 [20] [21 <./images/model1_confmat1_ferdi.png>]
 <./images/in3_ferdi.png, id=358, 678.25395pt x 626.5809pt>
 File: ./images/in3_ferdi.png Graphic file (type png)
 <use ./images/in3_ferdi.png>
-Package pdftex.def Info: ./images/in3_ferdi.png  used on input line 204.
+Package pdftex.def Info: ./images/in3_ferdi.png  used on input line 205.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
 <./images/in4_ferdi.png, id=359, 678.25395pt x 626.5809pt>
 File: ./images/in4_ferdi.png Graphic file (type png)
 <use ./images/in4_ferdi.png>
-Package pdftex.def Info: ./images/in4_ferdi.png  used on input line 213.
+Package pdftex.def Info: ./images/in4_ferdi.png  used on input line 214.
 (pdftex.def)             Requested size: 208.37297pt x 192.50336pt.
 <./images/model1_confidence_ferdi.png, id=360, 611.4042pt x 394.95555pt>
 File: ./images/model1_confidence_ferdi.png Graphic file (type png)
 <use ./images/model1_confidence_ferdi.png>
-Package pdftex.def Info: ./images/model1_confidence_ferdi.png  used on input line 222.
+Package pdftex.def Info: ./images/model1_confidence_ferdi.png  used on input line 223.
 (pdftex.def)             Requested size: 345.0pt x 222.87308pt.
-
-Underfull \hbox (badness 1264) in paragraph at lines 223--223
-[]\OT1/lmr/m/n/10 (+20) Figure 20: |Max-i-male Wahrschein-lichkeiten f^^?ur den n^^?achsten To-ken in
- []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -962,21 +999,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `alles.out' has not changed.
-(rerunfilecheck)             Checksum: B6CE334206BADFB37C93042F7AAB853E;5174.
+(rerunfilecheck)             Checksum: 31FCC6836226F01B984C607F3C736E70;5179.
 Package logreq Info: Writing requests to 'alles.run.xml'.
 \openout1 = `alles.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22374 strings out of 467871
- 402059 string characters out of 5418377
- 1358965 words of memory out of 5000000
- 50742 multiletter control sequences out of 15000+600000
- 683496 words of font info for 152 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 68i,15n,77p,1084b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 23616 strings out of 467871
+ 425595 string characters out of 5418377
+ 1400046 words of memory out of 5000000
+ 51952 multiletter control sequences out of 15000+600000
+ 683753 words of font info for 154 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 68i,15n,77p,1084b,7179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kkwie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on alles.pdf (26 pages, 1745124 bytes).
+Output written on alles.pdf (26 pages, 1750043 bytes).
 PDF statistics:
  509 PDF objects out of 1000 (max. 8388607)
  97 named destinations out of 1000 (max. 500000)

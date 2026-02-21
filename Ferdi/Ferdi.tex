@@ -145,7 +145,8 @@ Als weiteren Wermutstropfen erhalten wir auch mit Data Augmentation nur eine val
 wieder etwas stabiler als in \autoref{chap:ferdi:loss_tf} (Zur Info: aufgrund der Trainingsdauer haben wir für dieses Modell $\ell_{\text{SEQ}} = 256$ gewählt).
 
 \subsubsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
-Abschließend wollen wir mit dem ersten Modell noch ein paar "Benchmarks" auf dem Test-Set durchführen. \\
+Abschließend wollen wir mit dem ersten Modell noch ein paar Benchmarks
+auf dem Test-Set durchführen. \\
 Zunächst betrachten wir für eine fixe Input-Länge die Generierung als Klassifikationsproblem, \autoref{fig:ferdi:model1_conf_mat} zeigt die zugehörige
 Confusion-Matrix. \\
 
@@ -163,7 +164,7 @@ Confusion-Matrix. \\
     \label{fig:ferdi:model1_conf_mat2}
 \end{figure}
 
-Uns fallen zwei Dinge auf zunächst werden wenige Tokens tatsächlich verwendet, das ist allerdings nicht verwunderlich; sehr tiefe bzw. hohe Tonhöhen
+Uns fallen zwei Dinge auf: Zunächst werden wenige Tokens tatsächlich verwendet, das ist allerdings nicht verwunderlich; sehr tiefe bzw. hohe Tonhöhen
 kommen in Musik (jeglicher Zeit) kaum vor. Diesen "Beschränkung" hat auch unser Modell gelernt, ebenfalls dominiert die Hauptdiagonale die Vorhersagen
 deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix genauer fallen die zwei symmetrischen Nebendiagonalen auf 
 (die untere beginnt bei etwa $(36, 48)$ und endet bei etwa $(66, 78)$), die Nebendiagonalen liegen also interessanterweise

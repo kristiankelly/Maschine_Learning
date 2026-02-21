@@ -3,7 +3,9 @@
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{subcaption}
-\usepackage{placeins} 
+\usepackage{placeins}
+\usepackage[ngerman]{babel} % Deutsche Bezeichnungen
+
 
 
 \graphicspath{{./images}}
@@ -31,7 +33,7 @@ Machine Learning-Modelle wie Support Vector Machines und Random Forests. Für Zw
 \section{Konvertierung von Musik in Maschinenlesbare Daten}
 Bevor wir mit der Klassifikation und Generierung von Musikstücken beginnen können, müssen wir diese in ein Format umwandeln, welches von Maschinen gelesen und verarbeitet werden kann. 
 Hierfür verwenden wir das MIDI-Format (Musical Instrument Digital Interface). MIDI-Dateien enthalten Informationen über Noten, Lautstärke, Tempo und andere musikalische Parameter, jedoch keine Audiodaten selbst.
-Siehe \parencite{midi_smf_wikibooks} für eine ausführliche Beschreibung des MIDI-Formats und seine Struktur.
+Siehe \parencite{midi_smf_wikibooks} für eine ausführliche Beschreibung des MIDI-Formats und seiner Struktur.
 
 Im Rahmen dieses Projekts sind wir nur an den Notenwerten interessiert, sprich die Tonhöhe. Dabei wird jede Note durch eine (ganze) Zahl zwischen 0 und 127 dargestellt, wobei 60 dem mittleren C entspricht.
 Das bedeutet natürlich, dass wir keine Informationen über die Klangfarbe, das Instrument, die Lautstärke oder die Dauer (Rhythmus) der Noten haben. Insofern 
@@ -50,7 +52,7 @@ Vereinfachung durch und ordnen die Noten in einen Vektor ein. Dabei geht natürl
 ist für die beiden Aufgabenstellungen (Klassifikation und Generierung) unterschiedlich und wird in den jeweiligen Abschnitten beschrieben.
 
 
-\section{Kompnistenklassifikation}
+\section{Komponistenklassifikation}
 \input{../Ines/Ines.tex}
 
 \section{Musikgenerierung}
