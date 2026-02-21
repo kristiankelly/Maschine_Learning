@@ -83,7 +83,7 @@
       <file>alles.bcf</file>
     </requires>
     <requires type="editable">
-      <file>alles/references.bib</file>
+      <file>references.bib</file>
     </requires>
   </external>
 </requests>

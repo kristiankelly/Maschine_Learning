@@ -32,7 +32,7 @@ Konsequenz des SOS-Tokens; $\ell_{\text{SEQ}}$ ist dabei im Wesentlichen die max
 anders genannt, $\ell_{\text{SEQ}} = 512$. \\
 Wie sich die Länge der Anfangssequenz auf die Vorhersage des Modells auswirkt, 
 untersuchen wir in \autoref{chap:ferdi:benchmark_tf}. \\
-Ebenso lassen wir das Modell "entscheiden", wann das generierte Stück endet; die Konsequenz des EOS-Tokens (um 
+Ebenso lassen wir das Modell 'entscheiden', wann das generierte Stück endet; die Konsequenz des EOS-Tokens (um 
 Endlosschleifen zu vermeiden, ist eine maximale Länge aber dennoch zu setzen). \\
 Die Audiodateien finden sich unter folgenden Link: \url{https://www.kaggle.com/code/ferdibck/audiodateien-fuer-ausarbeitung-transformer}.
 
@@ -56,7 +56,7 @@ wobei wir an entscheidenden Stellen Hyperparameter wählen müssen, die die Kapa
     Positional-Encoding.
     \item Das Herzstück unseres Transformers ist natürlich die Multi-Head-Attention, die Anzahl der Attentions-Heads
     $N_H$ können wir als weiteren Hyperparameter wählen. Entscheidend ist für uns vorallem die Maskierung:
-    Da wir autoregressiv generieren, darf das Modell an Position $t$ nicht keine Informationen der noch zu
+    Da wir autoregressiv generieren, muss das Modell an Position $t$ Informationen der noch zu
     generierenden Noten an $t+1, \dots, \ell_{\text{SEQ}}$ erhalten.
     \item Nach der Attention-Schicht folgt ein einfaches Feed-Forward-Netzwerk, in unserem Fall bestehend aus zwei
     Schichten. Die Dimension innerhalb dieses Netzwerkes ist ein weiterer Hyperparameter $d_{\text{ffw}}$.
@@ -75,16 +75,17 @@ wobei wir an entscheidenden Stellen Hyperparameter wählen müssen, die die Kapa
 
 Nun stehen wir nicht mehr ganz am Anfang, wir orientieren uns an der Idee, die im Falle von
 RNNs erfolgreich war; unser Modell soll also \bf{eine} \normalfont Note aus $[0, 127]_{\mathbb{Z}}$ vorhersagen. \\
-Gem. \autoref{chap:ferdi:architecture_tf} haben wir $3$ Hyperparameter zu bestimmen, wir wählen
-diese analog zum RNN, siehe \autoref{fig:ferdi:model1_tf}:
+Gem. \autoref{chap:ferdi:architecture_tf} haben wir $3$ Hyperparameter zu bestimmen. Wir wählen
 \begin{itemize}
     \item $d_{\text{embed}} = 64$
     \item $N_H = 4$
     \item $d_{\text{ffw}} = 128$
 \end{itemize}
+und verwenden die Modellstruktur, welche in \autoref{fig:ferdi:model1_tf} zu finden ist.
+
 Wir trainieren ebenfalls für 20 Epochen mit EarlyStopping und ReduceLROnPlateau. Nach 15 Epochen wird das Training
 beendet und das beste Modell aus Epoche 10 übernommen: val-accuracy von ca. 84\% und test-accuracy von ca. 82\%.
-Wieder NICHT SCHLECHT. In \autoref{fig:ferdi:model1_gen1_tf} findet sich das mithilfe des gleichen Input für RNNs generierten
+Wieder NICHT SCHLECHT. In \autoref{fig:ferdi:model1_gen1_tf} findet sich das Mithilfe des gleichen Input für RNNs generierten
 Musikstückes; \autoref{fig:ferdi:model1_gen2_tf} zeigt hingegen ein vollständig generiertes Stück, nur mit dem 
 $\text{SOS}$-Token als Input.
 
@@ -103,10 +104,10 @@ $\text{SOS}$-Token als Input.
 \end{figure}
 
 Trotz ein paar harmonischen Ungereimheiten ist das erste Stück bis Takt 20 für das ungeschulte Ohr 
-recht gelungen, ab Takt 21 sind die generierten Akkorde eher der Sorte "Free Jazz". Doch auch die
+recht gelungen, ab Takt 21 sind die generierten Akkorde eher der Sorte 'Free Jazz'. Doch auch die
 Transformer-Architektur leidet unter Wiederholung der Akkorde. \\
-Das vollkommen selbst generierte Stück ist hingegen deutlich unharmonischer, so doch sich doch einige anhörliche
-Sequenzen finden lassen. \\
+Das vollkommen selbst generierte Stück ist hingegen deutlich unharmonischer, obwohl sich doch einige anhörliche
+Kadenzen finden lassen. \\
 Doch auch hier sei gewarnt: Die zwei generierten Stücke haben wir exemplarisch ausgewählt, es geht natürlich auch
 schlechter.
 
@@ -137,7 +138,7 @@ Aufgrund der häufig vorkommenden Dissonanzen trainieren wir das Modell erneut, 
 $w_3 = 10$. Das Ergebnis ist noch ernüchtender, das Modell beendet jedliche Notensequenzen mit dem $\text{EOS}$-Token nahezu sofort.
 
 \subsubsection{Ein Versuch von Data-Augmentation}
-Unser Trainings-Korpus ist mit 220 000 Tokens nahezu winzig im Vergleich zur heutigen Menge von Trainingsdaten für Transformer-Modelle. Vielleicht helfen auch
+Unser Trainings-Korpus ist mit 220 000 Tokens lächerlich klein im Vergleich zur heutigen Menge von Trainingsdaten für Transformer-Modelle. Vielleicht helfen auch
 in unserem Fall mehr Daten. \\
 Das Augmenting funktioniert ganz einfach, für jeden Choral $C_i = [n_{i,1}, \dots, n_{i, \ell}]$, fügen wir auch $C_i + t = [n_{i,1}+t, \dots, n_{i, \ell}+t]$
 in unseren Datenvektor $D$ hinzu; wir verschieben die Noten einfach um $t$ Halbtonschritte nach oben oder unten. Wir nutzen $t = -5, -4, -3, \dots, 6$. \\
@@ -145,7 +146,7 @@ Als weiteren Wermutstropfen erhalten wir auch mit Data Augmentation nur eine val
 wieder etwas stabiler als in \autoref{chap:ferdi:loss_tf} (Zur Info: aufgrund der Trainingsdauer haben wir für dieses Modell $\ell_{\text{SEQ}} = 256$ gewählt).
 
 \subsubsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
-Abschließend wollen wir mit dem ersten Modell noch ein paar Benchmarks
+Abschließend wollen wir mit dem ersten Modell noch ein paar 'Benchmarks'
 auf dem Test-Set durchführen. \\
 Zunächst betrachten wir für eine fixe Input-Länge die Generierung als Klassifikationsproblem, \autoref{fig:ferdi:model1_conf_mat} zeigt die zugehörige
 Confusion-Matrix. \\
@@ -165,7 +166,7 @@ Confusion-Matrix. \\
 \end{figure}
 
 Uns fallen zwei Dinge auf: Zunächst werden wenige Tokens tatsächlich verwendet, das ist allerdings nicht verwunderlich; sehr tiefe bzw. hohe Tonhöhen
-kommen in Musik (jeglicher Zeit) kaum vor. Diesen "Beschränkung" hat auch unser Modell gelernt, ebenfalls dominiert die Hauptdiagonale die Vorhersagen
+kommen in Musik (jeglicher Zeit) kaum vor. Diesen 'Beschränkung' hat auch unser Modell gelernt, ebenfalls dominiert die Hauptdiagonale die Vorhersagen
 deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix genauer fallen die zwei symmetrischen Nebendiagonalen auf 
 (die untere beginnt bei etwa $(36, 48)$ und endet bei etwa $(66, 78)$), die Nebendiagonalen liegen also interessanterweise
  $\pm 12$ Token-IDs unter bzw. über der Hauptdiagonale. Das sind genau 12 Halbtonschritte, also eine Oktave! Die Vorhersage ist also in diesem Fall

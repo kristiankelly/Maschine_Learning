@@ -20,7 +20,7 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Musikgenerierung mit Transformern}{15}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Die grundlegende Transformer-Architektur}{15}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}Ein erster Versuch}{16}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Ein alter Bekannter}{18}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5}Ein alter Bekannter}{19}{subsubsection.3.2.5}%
 \contentsline {subsubsection}{\numberline {3.2.6}Ein Versuch von Data-Augmentation}{20}{subsubsection.3.2.6}%
 \contentsline {subsubsection}{\numberline {3.2.7}Benchmarking}{20}{subsubsection.3.2.7}%
 \contentsline {section}{Quellen}{26}{section*.23}%

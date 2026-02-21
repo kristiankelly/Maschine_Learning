@@ -3,6 +3,7 @@
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{csquotes}
 \usepackage{placeins}
 \usepackage[ngerman]{babel} % Deutsche Bezeichnungen
 
@@ -15,14 +16,14 @@
 \author{Ferdinand Beck, Anna Bergner, Kristian Kelly, Severyn Khomych, Ines Landauer}
 \date{\today}
 
-\addbibresource{alles/references.bib}
+\addbibresource{references.bib}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-In dieser Arbeit beschäftigen wir uns mit der Klassifikation von Komponisten anhand ihrer Werke sowie der Generierung von Musikstücken. Für Ersteres verwenden wir "klassische" 
+In dieser Arbeit beschäftigen wir uns mit der Klassifikation von Komponisten anhand ihrer Werke sowie der Generierung von Musikstücken. Für Ersteres verwenden wir 'klassische' 
 Machine Learning-Modelle wie Support Vector Machines und Random Forests. Für Zweiteres machen wir Gebrauch von Recurrent Neural Networks und Transformer-Architekturen.
 \end{abstract}
 
@@ -37,7 +38,7 @@ Siehe \parencite{midi_smf_wikibooks} für eine ausführliche Beschreibung des MI
 
 Im Rahmen dieses Projekts sind wir nur an den Notenwerten interessiert, sprich die Tonhöhe. Dabei wird jede Note durch eine (ganze) Zahl zwischen 0 und 127 dargestellt, wobei 60 dem mittleren C entspricht.
 Das bedeutet natürlich, dass wir keine Informationen über die Klangfarbe, das Instrument, die Lautstärke oder die Dauer (Rhythmus) der Noten haben. Insofern 
-führen wir hier also eine Art Dimensionsreduktion durch und "projezieren" die Musikstücke auf die Tonhöhe der Noten. Das würde dann in etwa so aussehen:
+führen wir hier also eine Art Dimensionsreduktion durch und 'projezieren' die Musikstücke auf die Tonhöhe der Noten. Das würde dann in etwa so aussehen:
 
 
 \begin{figure}[h]
