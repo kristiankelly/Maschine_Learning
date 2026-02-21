@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{placeins} 
+
+
+\graphicspath{{./images}}
+\input{../preamble}
+
+\title{Komponistenklassifikation und Musikgenerierung mit maschinellem Lernen}
+\author{Ferdinand Beck, Anna Bergner, Kristian Kelly, Severyn Khomych, Ines Landauer}
+\date{\today}
+
+\addbibresource{alles/references.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In dieser Arbeit beschäftigen wir uns mit der Klassifikation von Komponisten anhand ihrer Werke sowie der Generierung von Musikstücken. Für Ersteres verwenden wir "klassische" 
+Machine Learning-Modelle wie Support Vector Machines und Random Forests. Für Zweiteres machen wir Gebrauch von Recurrent Neural Networks und Transformer-Architekturen.
+\end{abstract}
+
+\tableofcontents
+
+
+
+\section{Konvertierung von Musik in Maschinenlesbare Daten}
+Bevor wir mit der Klassifikation und Generierung von Musikstücken beginnen können, müssen wir diese in ein Format umwandeln, welches von Maschinen gelesen und verarbeitet werden kann. 
+Hierfür verwenden wir das MIDI-Format (Musical Instrument Digital Interface). MIDI-Dateien enthalten Informationen über Noten, Lautstärke, Tempo und andere musikalische Parameter, jedoch keine Audiodaten selbst.
+Siehe \parencite{midi_smf_wikibooks} für eine ausführliche Beschreibung des MIDI-Formats und seine Struktur.
+
+Im Rahmen dieses Projekts sind wir nur an den Notenwerten interessiert, sprich die Tonhöhe. Dabei wird jede Note durch eine (ganze) Zahl zwischen 0 und 127 dargestellt, wobei 60 dem mittleren C entspricht.
+Das bedeutet natürlich, dass wir keine Informationen über die Klangfarbe, das Instrument, die Lautstärke oder die Dauer (Rhythmus) der Noten haben. Insofern 
+führen wir hier also eine Art Dimensionsreduktion durch und "projezieren" die Musikstücke auf die Tonhöhe der Noten. Das würde dann in etwa so aussehen:
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{Typisches_stück.png}
+  \caption{Musikstück nach Reduktion auf Tonhöhe der Noten}
+  \label{fig:Typisches_stueck}
+\end{figure}
+
+Man sieht hier noch eine weitere Diskrepanz: Die Noten sind nicht immer einzeln nacheinander gespielt, sondern teilweise auch gleichzeitig (Akkorde). Daher führen wir noch eine weitere
+Vereinfachung durch und ordnen die Noten in einen Vektor ein. Dabei geht natürlich wieder Information verloren. Wie genau das Preprocessing durchgeführt wird,
+ist für die beiden Aufgabenstellungen (Klassifikation und Generierung) unterschiedlich und wird in den jeweiligen Abschnitten beschrieben.
+
+
+\section{Kompnistenklassifikation}
+\input{../Ines/Ines.tex}
+
+\section{Musikgenerierung}
+\input{../Kristian/Kristian.tex}
+\input{../Ferdi/Ferdi.tex}
+
+\FloatBarrier
+\printbibliography[title = {Quellen}, heading=bibintoc]
+\end{document}

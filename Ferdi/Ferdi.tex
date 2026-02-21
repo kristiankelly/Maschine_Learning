@@ -1,18 +1,8 @@
-\documentclass{"article"}
 
-\input{../preamble.tex}
 
-\usepackage{subcaption}
+\subsection{Musikgenerierung mit Transformern}
 
-\addbibresource{references_ferdi.bib}
-
-\begin{document}
-
-\section{Musikgenerierung mit Transformern}
-
-\subsection{Einleitung}
-
-\subsection{Preprocessing}
+\subsubsection{Preprocessing}
 Für die Transformer-Architektur passen wir das Preprocessing ein wenig an. \\
 Jeden Choral erweitern wir um einen SOS-Token (Start-Of-Sequence) am Anfang und einen EOS-Token (End-Of-Sequence)
 am Ende. Alle diese modifizierten Choräle konkatenieren wir dann zu einem einzigen Vektor $D$. \\
@@ -32,7 +22,7 @@ Das Target $y$ ist also die um eine Position verschobene Input-Sequenz. \\
 Unter Berücksichtigung der drei Spezialtokens $\text{SOS}, \text{EOS} und \text{PAD}$ erhalten wir eine 
 Vokabulargröße $V$ von 131.
 
-\subsection{Musikgenerierung mit Transformern}
+\subsubsection{Musikgenerierung mit Transformern}
 Der Generierungsprozess verläuft analog zu RNNs durch Sampling aus der Wahrscheinlichkeitsverteilung
 des Modells. \\
 In unserem Fall gestalten wir die Generierung mit Transformern etwas flexibler: An die Anfangssequenz wird nur 
@@ -46,7 +36,7 @@ Ebenso lassen wir das Modell "entscheiden", wann das generierte Stück endet; di
 Endlosschleifen zu vermeiden, ist eine maximale Länge aber dennoch zu setzen). \\
 Die Audiodateien finden sich unter folgenden Link: \url{https://www.kaggle.com/code/ferdibck/audiodateien-fuer-ausarbeitung-transformer}.
 
-\subsection{Die grundlegende Transformer-Architektur}\label{chap:ferdi:architecture_tf}
+\subsubsection{Die grundlegende Transformer-Architektur}\label{chap:ferdi:architecture_tf}
 \begin{figure}[h]
     \centering
     \includegraphics[height=12cm]{basis_tf_ferdi.png}
@@ -75,7 +65,7 @@ wobei wir an entscheidenden Stellen Hyperparameter wählen müssen, die die Kapa
     man die Wahrscheinlichkeitsverteilung für das Noten-Sampling.
  \end{itemize}
 
-\subsection{Ein erster Versuch}
+\subsubsection{Ein erster Versuch}
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{model1_summary_ferdi.png}
@@ -120,7 +110,7 @@ Sequenzen finden lassen. \\
 Doch auch hier sei gewarnt: Die zwei generierten Stücke haben wir exemplarisch ausgewählt, es geht natürlich auch
 schlechter.
 
-\subsection{Ein alter Bekannter}\label{chap:ferdi:loss_tf}
+\subsubsection{Ein alter Bekannter}\label{chap:ferdi:loss_tf}
 
 \begin{figure}[h]
     \centering
@@ -146,7 +136,7 @@ im Eye-Test scheint diese instabiler zu sein, die generierten Stücke finden sic
 Aufgrund der häufig vorkommenden Dissonanzen trainieren wir das Modell erneut, dieses mal mit $w_1 = 0.01$, $w_2 = 1$ und
 $w_3 = 10$. Das Ergebnis ist noch ernüchtender, das Modell beendet jedliche Notensequenzen mit dem $\text{EOS}$-Token nahezu sofort.
 
-\subsection{Ein Versuch von Data-Augmentation}
+\subsubsection{Ein Versuch von Data-Augmentation}
 Unser Trainings-Korpus ist mit 220 000 Tokens nahezu winzig im Vergleich zur heutigen Menge von Trainingsdaten für Transformer-Modelle. Vielleicht helfen auch
 in unserem Fall mehr Daten. \\
 Das Augmenting funktioniert ganz einfach, für jeden Choral $C_i = [n_{i,1}, \dots, n_{i, \ell}]$, fügen wir auch $C_i + t = [n_{i,1}+t, \dots, n_{i, \ell}+t]$
@@ -154,7 +144,7 @@ in unseren Datenvektor $D$ hinzu; wir verschieben die Noten einfach um $t$ Halbt
 Als weiteren Wermutstropfen erhalten wir auch mit Data Augmentation nur eine val-acc bei 84\% und eine test-acc bei 83\%. Die Generierung läuft allerdings 
 wieder etwas stabiler als in \autoref{chap:ferdi:loss_tf} (Zur Info: aufgrund der Trainingsdauer haben wir für dieses Modell $\ell_{\text{SEQ}} = 256$ gewählt).
 
-\subsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
+\subsubsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
 Abschließend wollen wir mit dem ersten Modell noch ein paar "Benchmarks" auf dem Test-Set durchführen. \\
 Zunächst betrachten wir für eine fixe Input-Länge die Generierung als Klassifikationsproblem, \autoref{fig:ferdi:model1_conf_mat} zeigt die zugehörige
 Confusion-Matrix. \\
@@ -233,5 +223,3 @@ deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix
     \caption{Maximale Wahrscheinlichkeiten für den nächsten Token in Abhängigkeit der Input-Länge}
     \label{fig:ferdi:max_probs}
 \end{figure}
-
-\end{document}

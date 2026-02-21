@@ -1,18 +1,8 @@
-\documentclass{"article"}
-\usepackage{enumitem}
-\usepackage{float}
 
 
 
-\input{../preamble.tex}
-\addbibresource{References.bib}
-
-\begin{document}
-
-
-\section{Einleitung}
-In diesem Part der Arbeit, versuchen wir Musikstücke ihren Komponisten zuzuordnen. Dafür verwenden wir das Datenset "Classical Music MIDI as CSV", welches auf Kaggle zur Verfügung steht.
-Auch hier liegt bei den einzelnen Musikstücken wieder nicht die Audiodatei selbst vor, sondern ein MIDI File, mit welchem die Maschine umgehen kann.
+\subsection{Preprocessing}
+Für die Klassifikation verwenden wir das Dataset "Classical Music MIDI as CSV", welches auf Kaggle zur Verfügung steht. 
 
 Das Datenset ist wiefolgt aufgebaut: 
 Es gibt 10 verschiedene Kategorien, in welche die Musikstücke eingeordnet werden.
@@ -34,28 +24,27 @@ In diesem Datenset gibt es folgende Kategorien:
   \item Vivaldi, mit 7.494.
 \end{enumerate}
 
-Künstler mit weniger als 100 Stücken sind beispielsweise: Pachelbel, Jakobowski oder Strauss.
-Über die Stücke selbst liegen wieder verschiedene Informationen, wie beispielsweise die Noten oder der Takt vor. Für die Klassifikation haben wir nur die Noten verwendet.
-Die Noten sind Zahlenwerte von eins bis 127, sprich es ist gleich aufgebaut, wie beim Teil der Generierung.
-Weitere Informationen zum Aufbau des Datensets, siehe \parencite{Dataset}.
+Künstler mit weniger als 100 Stücken sind beispielsweise: Pachelbel, Jakobowski oder Strauss. 
+Für weitere Informationen zum Aufbau des Datensets, siehe \parencite{Dataset}.
+
+Die einzelnen Werke kommen in Form von MIDI-Dateien, wobei dem Datensatz auch eine Funktion beigelegt ist, welche
+diese in CSV-Dateien umwandelt. Aus diesem extrahieren wir dann die Notenwerte für jedes Stück und geben diese in einen Vektor 
+mit Werten in $[0, 127]_{\mathbb{Z}}$. Anschließend zerteilen wir die Vektoren in Abschnitte der Länge $L$, damit wir eine einheitliche 
+Sequenzlänge über alle Komponisten haben. $L$ repräsentiert natürlich einen Hyperparameter, welchen wir für diese
+Arbeit auf 100 gesetzt haben.
+
+Da die Daten sehr unausgeglichen sind (so hat zum Beispiel Bach am meisten Stücke mit 35.191, Händel jedoch nur 6.031), muss das Datenset abschließend noch balanciert werden. 
+Dabei gehen aber im schlimmsten Fall (von Bach) 29.160 Datenpunkte, also über 80\% der Informationen verloren. Das ist natürlich nicht gut für die Klassifikation, wie sich später auch zeigen wird.
+
 
 \textit{Im Allgemeinen haben wir in diesem Abschnitt die Kategorien 1 (ALL) und 8 (Título desconocido) ausgelassen, weil sie alle Stücke bzw. Stücke ohne Künstler beinhalten und wir das 
 für die Klassifikation nicht verwenden können.}
 
 
-\section{Vorbereitung der Daten}
-
-\textbf{Kristian schreibst du das noch, weil sonst würd ich einfach schreiben: "ist gleich wie bei Generierung"}
-
-
-\section{Klassifikation mit RandomForestClassifier}
-\subsection{Erster Versuch}
-Zur Klassifikation verwenden wir einen Random Forest. Nachem wir die Daten vorbereitet haben, ordnen wir die Stücke ihren Komponisten zu.
-Da die Daten sehr unausgeglichen sind (so hat zum Beispiel Bach am meisten mit 35.191 Daten und Händel mit nur 6.031 die wenigsten Informationen) muss das Datenset balanciert werden. 
-Dabei gehen aber im schlimmsten Fall (von Bach) 29.160 Datenpunkte, also über 80\% der Informationen verloren. Das ist natürlich nicht gut für die Klassifikation, wie sich später auch zeigen wird.
-
-
-Trainiert man einen Random Forest mit den Default-Werten (\cite{RandomForestClassifier}), so erhält man eine Accuracy von 27\%. Also schlecht. Setzt man den Defaultwert von \emph{n\_estimators} (die Anzahl
+\subsection{Klassifikation mit RandomForestClassifier}
+\subsubsection{Erster Versuch}
+Zur Klassifikation verwenden wir einen Random Forest. 
+Trainiert man diesen mit den Default-Werten (\cite{RandomForestClassifier}), so erhält man eine Accuracy von 27\%. Also schlecht. Setzt man den Defaultwert von \emph{n\_estimators} (die Anzahl
 der Bäume im Forest) höher, so verbessert sich die Accuracy. Bei beispielsweise 1.000 Bäumen hat man eine Genauigkeit von 31\%, was besser aber immernoch schlecht ist.
 Das Problem, wenn man \emph{n\_estimators} höher setzt, ist, dass es länger braucht zum Laden. 
 Betrachtet man die Confusionmatrix (\ref{fig:Klassifikation_ohne_Epochen}), kann man folgendes erkennen:
@@ -76,8 +65,6 @@ auf die Idee gekommen im zweiten Versuch über zwei (bzw. dann fünf) Modelle zu
   \label{fig:Klassifikation_ohne_Epochen}
 \end{figure}
 
-
-\subsection{Zweiter Versuch: Mit Einbezug der zeitlichen Epochen}
 \subsubsection{Modell zur Klasssifizierung in die Epochen}
 Wir trainieren zuerst nach den verschiedenen Epochen, in welchen die Künstler gelebt haben. Diese sind:
 \begin{itemize}
@@ -87,7 +74,7 @@ Wir trainieren zuerst nach den verschiedenen Epochen, in welchen die Künstler g
 \end{itemize}
 
 Die Accuracy beim Einordnen der Stücke in ihre jeweiligen Epochen beträgt 55\%. Auch hier verlieren wir wieder viele Daten beim Balancieren, da bei der Zuordnung zu den verschiedenen Zeitabschnitten grosse Unterschiede
-auftreten. So hat die Romantik nur noch 1/3 der Daten, die beim Barock vorliegen. Dennoch ist das Problem zu Versuch eins,
+auftreten. So hat die Romantik nur noch 1/3 der Daten, die beim Barock vorliegen. Dennoch ist das Problem zu Versuch 1,
 wo wir 80\% verloren haben, besser geworden.
 
 \subsubsection{Modelle zum Klassifizieren innerhalb der einzelnen Epochen}
@@ -116,7 +103,7 @@ Mit diesen fünf Modellen haben wir eine Accuracy von knapp 40\% erreicht, was e
 Dennoch ist sie nicht besonders gut, was daran liegt, dass schon beim Einteilen in die verschiedenen Epochen nur eine Genauigkeit von 55\% erreicht wird. Somit wäre das dann auch die maximal mögliche Genauigkeit.
 
 
-\section{Klassifizieren mittels Support Vector Classification (SCV)}
+\subsection{Klassifizieren mittels Support Vector Classification (SCV)}
 In einem neuen Versuch verwenden wir anstatt des RandomForestClassifiers eine Support Vektor Maschine, mit welcher wir dann Klassifizieren (gennant auch SVC für Support Vector Classification).
 Bei der SVC werden die Objekte in Klassen unterteilt, wobei diese durch Vektoren im Vektorraum dargestellt werden. Der Algorithmus versucht dann, die Objekte durch Hyperebenen so zu trennen, dass der Abstand der Vektoren, welche
 am nächsten an der Hyperebene liegen maximiert wird. Gibt man dem Modell später neue unbekannte Daten, versucht es, diese in die vorgelernten Klassen einzuteilen, anhand der Trennlinien, die zuvor antrainiert wurden \parencite{Wikipedia_SVM}.
@@ -137,5 +124,3 @@ Die Suche nach den besten Parametern ergibt eine Genauigkeit von 23\%. Diese Par
 
 Dementsprechend ist die beste Methode für eine Klassifizierung, über die Zeitepochen die Stücke einzuteilen und dann innerhalb dieser nochmals spezifisch die Künstler zuzuordnen. Jedoch ist auch dieses nicht gut, da nur eine Genauigkeit von etwa 40\% erreicht werden kann.
 Das Problem liegt dabei daran, dass sich die Stücke von der Abfolge der Noten (der Melodie) nicht weit genug unterscheiden, dass beim Trainieren ein Unterschied erkannt wird.
-
-\end{document}

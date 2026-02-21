@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Ferdi.bcf</file>
+      <file>alles.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>Ferdi.bbl</file>
+      <file>alles.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,22 +68,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>Ferdi</infile>
+      <infile>alles</infile>
     </cmdline>
     <input>
-      <file>Ferdi.bcf</file>
+      <file>alles.bcf</file>
     </input>
     <output>
-      <file>Ferdi.bbl</file>
+      <file>alles.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>Ferdi.bbl</file>
+      <file>alles.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Ferdi.bcf</file>
+      <file>alles.bcf</file>
     </requires>
     <requires type="editable">
-      <file>references_ferdi.bib</file>
+      <file>alles/references.bib</file>
     </requires>
   </external>
 </requests>
