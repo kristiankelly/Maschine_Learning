@@ -4,10 +4,10 @@
 \subsection{Preprocessing}
 Für die Klassifikation verwenden wir das Dataset 'Classical Music MIDI as CSV', welches auf Kaggle zur Verfügung steht. 
 
-Das Datenset ist wiefolgt aufgebaut: 
+Das Datenset ist wie folgt aufgebaut: 
 Es gibt 10 verschiedene Kategorien, in welche die Musikstücke eingeordnet werden.
 Gibt es zu einem Künstler mehr als 100 Stücke, so hat dieser seine eigene Kategorie. Von vielen Künstlern stehen aber weniger als 100 Werke zur Verfügung. Diese (sowie auch die Stücke der Komponisten mit mehr als 100 Werken) finden sich
-in der Kategorie 'ALL'. Es gibt eine Kategorie 'Varios - Título desconocido', was spanisch ist für 'Verschiedene - Titel unbekannt', wo sich Stücke befinden, bei welchen weder Titel noch Künstler bekannt ist.
+in der Kategorie 'ALL'. Es gibt eine Kategorie 'Varios - Título desconocido', was Spanisch ist für 'Verschiedene - Titel unbekannt', wo sich Stücke befinden, bei welchen weder Titel noch Künstler bekannt sind.
 
 In diesem Datenset gibt es folgende Kategorien:
 
@@ -45,9 +45,9 @@ für die Klassifikation nicht verwenden können.}
 \subsubsection{Erster Versuch}
 Zur Klassifikation verwenden wir einen Random Forest. 
 Trainiert man diesen mit den Default-Werten (\cite{RandomForestClassifier}), so erhält man eine Accuracy von 27\%. Setzt man den Defaultwert von \emph{n\_estimators} (die Anzahl
-der Bäume im Forest) höher, so verbessert sich die Accuracy. Bei beispielsweise 1.000 Bäumen hat man eine Genauigkeit von 31\%, was besser aber immernoch schlecht ist.
+der Bäume im Forest) höher, so verbessert sich die Accuracy. Bei beispielsweise 1.000 Bäumen hat man eine Genauigkeit von 31\%, was besser aber immer noch schlecht ist.
 Das Problem, wenn man \emph{n\_estimators} höher setzt, ist, dass es länger braucht zum Laden. 
-Betrachtet man die Konfusionmatrix (\ref{fig:Klassifikation_ohne_Epochen}), kann man Folgendes erkennen:
+Betrachtet man die Konfusionsmatrix (\ref{fig:Klassifikation_ohne_Epochen}), kann man Folgendes erkennen:
 
 \begin{itemize}
     \item Stücke von zum Beispiel Schubert können gut klassifiziert werden.
@@ -55,8 +55,8 @@ Betrachtet man die Konfusionmatrix (\ref{fig:Klassifikation_ohne_Epochen}), kann
     \item Im Allgemeinen sieht man aber, dass Musikstücke oft in der gleichen Zeitepoche, in welcher die Künstler gelebt haben, vertauscht werden.
 \end{itemize}
 
-Durch die Beobachtung, dass Werke, die der gleichen Epoche angehören öfter verwechselt werden, sind wir
-auf die Idee gekommen im zweiten Versuch über zwei (bzw. dann fünf) Modelle zu klassifizieren. Hier haben wir das Musikstück zuerst seiner Epoche und dann innerhalb dieser dem Komponisten zugeordnet.
+Durch die Beobachtung, dass Werke, die der gleichen Epoche angehören, öfter verwechselt werden, sind wir
+auf die Idee gekommen, im zweiten Versuch über zwei (bzw. dann fünf) Modelle zu klassifizieren. Hier haben wir das Musikstück zuerst seiner Epoche und dann innerhalb dieser dem Komponisten zugeordnet.
 
 \begin{figure}[H]
   \centering
@@ -74,17 +74,17 @@ Wir trainieren zuerst nach den verschiedenen Epochen, in welchen die Künstler g
 \end{itemize}
 
 Die Accuracy beim Einordnen der Stücke in ihre jeweiligen Epochen beträgt 55\%. Auch hier verlieren wir wieder viele Daten beim Balancieren, da bei der Zuordnung zu den verschiedenen Zeitabschnitten große Unterschiede
-auftreten. So hat die Romantik nur noch 1/3 der Daten, die beim Barock vorliegen. Dennoch ist das Problem zu Versuch 1,
+auftreten. So hat die Romantik nur noch 1/3 der Daten, die beim Barock vorliegen. Dennoch ist das Problem im Gegensatz zu Versuch 1,
 wo wir 80\% verloren haben, besser geworden.
 
 \subsubsection{Modelle zum Klassifizieren innerhalb der einzelnen Epochen}
-Innerhalb der verschiedenen Epochen (Barock, Klassik und Romantik) werden die Werke ihren Komponisten zugeordnet. Das hat, wie man in der Grafik \ref{fig:Innerhalb_der_Epochen} erkennen kann, vorallem in der Klassik sowie Romantik
- gut funktioniert. Dort erreichen wir eine Accuracy von 67\% bzw. 66\%. Nur im Barock funktioniert es schlechter mit einer Genauikgeit von 43\%, wobei vorallem Scarlatti und Vivaldi oft falsch eingeordnet werden.
+Innerhalb der verschiedenen Epochen (Barock, Klassik und Romantik) werden die Werke ihren Komponisten zugeordnet. Das hat, wie man in der Grafik \ref{fig:Innerhalb_der_Epochen} erkennen kann, vor allem in der Klassik sowie Romantik
+gut funktioniert. Dort erreichen wir eine Accuracy von 67\% bzw. 66\%. Nur im Barock funktioniert es schlechter mit einer Genauigkeit von 43\%, wobei vorallem Scarlatti und Vivaldi oft falsch eingeordnet werden.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=1\textwidth]{Innerhalb_der_Epochen.png}
-  \caption{Links: Barock, Mitte: Klassik, Recht: Romantik}
+  \caption{Links: Barock, Mitte: Klassik, Rechts: Romantik}
   \label{fig:Innerhalb_der_Epochen}
 \end{figure}
 
@@ -104,11 +104,11 @@ Dennoch ist sie nicht besonders gut, was daran liegt, dass schon beim Einteilen 
 
 
 \subsection{Klassifizieren mittels Support Vector Classification (SVC)}
-In einem neuen Versuch verwenden wir anstatt des RandomForestClassifiers eine Support Vektor Maschine, mit welcher wir dann Klassifizieren (gennant auch SVC für Support Vector Classification).
+In einem neuen Versuch verwenden wir anstatt des RandomForestClassifiers eine Support Vektor Maschine, mit welcher wir dann Klassifizieren (genant auch SVC für Support Vector Classification).
 Bei der SVC werden die Objekte in Klassen unterteilt, wobei diese durch Vektoren im Vektorraum dargestellt werden. Der Algorithmus versucht dann, die Objekte durch Hyperebenen so zu trennen, dass der Abstand der Vektoren, welche
-am nächsten an der Hyperebene liegen maximiert wird. Gibt man dem Modell später neue unbekannte Daten, versucht es, diese in die vorgelernten Klassen einzuteilen, anhand der Trennlinien, die zuvor antrainiert wurden \parencite{SVM}.
+am nächsten an der Hyperebene liegen, maximiert wird. Gibt man dem Modell später neue unbekannte Daten, versucht es, diese, in die vorgelernten Klassen einzuteilen, anhand der Trennlinien, die zuvor antrainiert wurden \parencite{SVM}.
 
-Da dies aber vorallem für viele Daten sehr aufwändig ist, haben wir die Daten pro Künstler nur auf 603 (also 1/10 von dem, was wir aufgrund des Balancieren verwenden könnten) beschränkt. Ohne diese Maßnahme wäre es aufgrund der Ladedauer nicht möglich gewesen,
+Da dies aber vor allem für viele Daten sehr aufwändig ist, haben wir die Daten pro Künstler nur auf 603 (also 1/10 von dem, was wir aufgrund des Balancierens verwenden könnten) beschränkt. Ohne diese Maßnahme wäre es aufgrund der Ladedauer nicht möglich gewesen,
 einen RandomizedSearchCV anzuwenden, welcher die besten Parameter für die Support Vector Classification sucht.
 
 Mit den Standardparametern der Support Vektor Klassifizierung (\cite{SupportVectorClassifier}) erhält man eine Accuracy von nur 18\%.
@@ -116,7 +116,7 @@ Mit den Standardparametern der Support Vektor Klassifizierung (\cite{SupportVect
 Die Suche nach den besten Parametern ergibt eine Genauigkeit von 23\%. Diese Parameter sind:
 \begin{itemize}
   \item[\textbf{C}]: 0.5, 
-  \item[\textbf{Kernel}]: Poly, (Diesen Parameter braucht man, da die SVC normalerweise nur linear sein würde. Das Modell versucht also die Daten linear zu trennen. Dies ist aber nicht möglich, da die gegeben Daten nicht linear sind. Also verwendet man einen Kernel, um auch gekrümmte Schnittlinien zu erhalten.)
+  \item[\textbf{Kernel}]: Poly, (Diesen Parameter braucht man, da die SVC normalerweise nur linear sein würde. Das Modell versucht also die Daten linear zu trennen. Dies ist aber nicht möglich, da die gegebenen Daten nicht linear sind. Also verwendet man einen Kernel, um auch gekrümmte Schnittlinien zu erhalten.)
   \item[\textbf{Degree}]: 3, 
   \item[\textbf{Gamma}]: auto, (Diesen Koeffizienten braucht man, wenn der Kernel 'rbf', 'poly' oder 'sigmoid' ist. Wir haben aber nur zwischen Poly, Sigmoid und Linear den besten Kerneltyp gesucht. Somit würde $\gamma$ nur bei Poly oder Sigmoid verwendet werden.)
   \item[\textbf{Tol}]: 0.01.

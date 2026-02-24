@@ -6,7 +6,7 @@
 Für die Transformer-Architektur passen wir das Preprocessing ein wenig an. \\
 Jeden Choral erweitern wir um einen SOS-Token (Start-Of-Sequence) am Anfang und einen EOS-Token (End-Of-Sequence)
 am Ende. Alle diese modifizierten Choräle konkatenieren wir dann zu einem einzigen Vektor $D$. \\
-Sei $C_i = [n_{i,1}, \dots, n_{i, \ell}]$ der $i$-ten Choral, der Datenvektor $D$ ergibt sich dann als
+Sei $C_i = [n_{i,1}, \dots, n_{i, \ell}]$ der $i$-te Choral, der Datenvektor $D$ ergibt sich dann als
 \begin{align*}
     D = [\text{SOS}, \underbrace{n_{1, 1}, \dots, n_{1, \ell_1}}_{C_1}, \text{EOS}, 
     \text{SOS}, \underbrace{n_{2, 1}, \dots, n_{2, \ell_2}}_{C_2}, \text{EOS}, \dots, \text{EOS}]
@@ -19,7 +19,7 @@ Ein Input-Output-Paar $(x,y)$ ist definiert als:
     y = [t_{k+1}, \dots, t_{k+\ell_{\text{SEQ}}}]
 \end{align*}
 Das Target $y$ ist also die um eine Position verschobene Input-Sequenz. \\
-Unter Berücksichtigung der drei Spezialtokens $\text{SOS}, \text{EOS} und \text{PAD}$ erhalten wir eine 
+Unter Berücksichtigung der drei Spezialtokens $\text{SOS}, \text{EOS} \text{ und } \text{PAD}$ erhalten wir eine 
 Vokabulargröße $V$ von 131.
 
 \subsubsection{Musikgenerierung mit Transformern}
@@ -44,7 +44,7 @@ Die Audiodateien finden sich unter folgenden Link: \url{https://www.kaggle.com/c
     \label{fig:ferdi:visualization_tf}
 \end{figure}
 
-Für die konkrete Struktur orientieren wir uns an \cite{chollet2021learning_ferdi}, Da wir während der Inferenz 
+Für die konkrete Struktur orientieren wir uns an \cite{chollet2021learning_ferdi}. Da wir während der Inferenz 
 nur Zugriff auf die bisherigen Noten haben, implementieren wir einen Decoder-Only-Transformer. Die in
 \autoref{fig:ferdi:visualization_tf} dargestellte Architektur lässt sich in folgende Komponenten unterteilen, 
 wobei wir an entscheidenden Stellen Hyperparameter wählen müssen, die die Kapazität und das Lernverhalten des
@@ -55,13 +55,13 @@ wobei wir an entscheidenden Stellen Hyperparameter wählen müssen, die die Kapa
     gleicher Dimension, in unserem Fall nutzen wir das in \cite{vaswani2017attention_ferdi} vorgestellte 
     Positional-Encoding.
     \item Das Herzstück unseres Transformers ist natürlich die Multi-Head-Attention, die Anzahl der Attentions-Heads
-    $N_H$ können wir als weiteren Hyperparameter wählen. Entscheidend ist für uns vorallem die Maskierung:
+    $N_H$ können wir als weiteren Hyperparameter wählen. Entscheidend ist für uns vor allem die Maskierung:
     Da wir autoregressiv generieren, muss das Modell an Position $t$ Informationen der noch zu
     generierenden Noten an $t+1, \dots, \ell_{\text{SEQ}}$ erhalten.
     \item Nach der Attention-Schicht folgt ein einfaches Feed-Forward-Netzwerk, in unserem Fall bestehend aus zwei
     Schichten. Die Dimension innerhalb dieses Netzwerkes ist ein weiterer Hyperparameter $d_{\text{ffw}}$.
     \item Schließlich bildet die letzte Schicht auf einen Vektor der Dimension $V$ ab, wir nutzen keine
-    Aktivierungsfunktion, erhalten die sog. Logits als Output. Wendet man auf diese die Softmax-Funktion an, erhält
+    Aktivierungsfunktion und erhalten die sog. Logits als Output. Wendet man auf diese die Softmax-Funktion an, erhält
     man die Wahrscheinlichkeitsverteilung für das Noten-Sampling.
  \end{itemize}
 
@@ -84,9 +84,9 @@ Gem. \autoref{chap:ferdi:architecture_tf} haben wir $3$ Hyperparameter zu bestim
 und verwenden die Modellstruktur, welche in \autoref{fig:ferdi:model1_tf} zu finden ist.
 
 Wir trainieren ebenfalls für 20 Epochen mit EarlyStopping und ReduceLROnPlateau. Nach 15 Epochen wird das Training
-beendet und das beste Modell aus Epoche 10 übernommen: val-accuracy von ca. 84\% und test-accuracy von ca. 82\%.
-Wieder NICHT SCHLECHT. In \autoref{fig:ferdi:model1_gen1_tf} findet sich das Mithilfe des gleichen Input für RNNs generierten
-Musikstückes; \autoref{fig:ferdi:model1_gen2_tf} zeigt hingegen ein vollständig generiertes Stück, nur mit dem 
+beendet und das beste Modell aus Epoche 10 übernommen: Val-Accuracy von ca. 84\% und Test-Accuracy von ca. 82\%.
+Wieder NICHT SCHLECHT. In \autoref{fig:ferdi:model1_gen1_tf} findet sich das mithilfe des gleichen Input für RNNs generierte
+Musikstück; \autoref{fig:ferdi:model1_gen2_tf} zeigt hingegen ein vollständig generiertes Stück, nur mit dem 
 $\text{SOS}$-Token als Input.
 
 \begin{figure}[h]
@@ -103,9 +103,9 @@ $\text{SOS}$-Token als Input.
     \label{fig:ferdi:model1_gen2_tf}
 \end{figure}
 
-Trotz ein paar harmonischen Ungereimheiten ist das erste Stück bis Takt 20 für das ungeschulte Ohr 
+Trotz ein paar harmonischer Ungereimheiten ist das erste Stück bis Takt 20 für das ungeschulte Ohr 
 recht gelungen, ab Takt 21 sind die generierten Akkorde eher der Sorte 'Free Jazz'. Doch auch die
-Transformer-Architektur leidet unter Wiederholung der Akkorde. \\
+Transformer-Architektur leidet unter Wiederholungen der Akkorde. \\
 Das vollkommen selbst generierte Stück ist hingegen deutlich unharmonischer, obwohl sich doch einige anhörliche
 Kadenzen finden lassen. \\
 Doch auch hier sei gewarnt: Die zwei generierten Stücke haben wir exemplarisch ausgewählt, es geht natürlich auch
@@ -130,20 +130,20 @@ schlechter.
 Wie oben gesehen hat der Transformer-Ansatz ebenfalls Probleme mit der Akkord-Harmonie, für RNNs hat hier ja die
 veränderte Loss-Funktion geholfen. Wir trainieren also auch unseren Transformer (\autoref{fig:ferdi:model1_tf}) mit
 diesen, wobei wir $w_1 = 0.01$, $w_2 = 0.1$ und $w_3 = 1$ wählen. \\
-Nach 20 Epochen erhalten wir das beste Modell aus Epoche 19 mit val-acc von etwa 83\% und test-acc von etwa 82\%,
+Nach 20 Epochen erhalten wir das beste Modell aus Epoche 19 mit Val-Accuracy von etwa 83\% und Test-Accuracy von etwa 82\%,
 von den reinen Werten ist also keine Verbesserung zu erkennen. In der Generierung lässt sich sogar eher eine Verschlechterung erkennen,
 im Eye-Test scheint diese instabiler zu sein, die generierten Stücke finden sich in \autoref{fig:ferdi:model2_gen1_tf} und
 \autoref{fig:ferdi:model2_gen2_tf}. \\
-Aufgrund der häufig vorkommenden Dissonanzen trainieren wir das Modell erneut, dieses mal mit $w_1 = 0.01$, $w_2 = 1$ und
-$w_3 = 10$. Das Ergebnis ist noch ernüchtender, das Modell beendet jedliche Notensequenzen mit dem $\text{EOS}$-Token nahezu sofort.
+Aufgrund der häufig vorkommenden Dissonanzen trainieren wir das Modell erneut, dieses Mal mit $w_1 = 0.01$, $w_2 = 1$ und
+$w_3 = 10$. Das Ergebnis ist noch ernüchternder, das Modell beendet jedliche Notensequenzen mit dem $\text{EOS}$-Token nahezu sofort.
 
 \subsubsection{Ein Versuch von Data-Augmentation}
 Unser Trainings-Korpus ist mit 220 000 Tokens lächerlich klein im Vergleich zur heutigen Menge von Trainingsdaten für Transformer-Modelle. Vielleicht helfen auch
 in unserem Fall mehr Daten. \\
 Das Augmenting funktioniert ganz einfach, für jeden Choral $C_i = [n_{i,1}, \dots, n_{i, \ell}]$, fügen wir auch $C_i + t = [n_{i,1}+t, \dots, n_{i, \ell}+t]$
 in unseren Datenvektor $D$ hinzu; wir verschieben die Noten einfach um $t$ Halbtonschritte nach oben oder unten. Wir nutzen $t = -5, -4, -3, \dots, 6$. \\
-Als weiteren Wermutstropfen erhalten wir auch mit Data Augmentation nur eine val-acc bei 84\% und eine test-acc bei 83\%. Die Generierung läuft allerdings 
-wieder etwas stabiler als in \autoref{chap:ferdi:loss_tf} (Zur Info: aufgrund der Trainingsdauer haben wir für dieses Modell $\ell_{\text{SEQ}} = 256$ gewählt).
+Als weiteren Wermutstropfen erhalten wir auch mit Data Augmentation nur eine Val-Accuracy bei 84\% und eine Test-Accuracy bei 83\%. Die Generierung läuft allerdings 
+wieder etwas stabiler als in \autoref{chap:ferdi:loss_tf} (zur Info: aufgrund der Trainingsdauer haben wir für dieses Modell $\ell_{\text{SEQ}} = 256$ gewählt).
 
 \subsubsection{Benchmarking}\label{chap:ferdi:benchmark_tf}
 Abschließend wollen wir mit dem ersten Modell noch ein paar 'Benchmarks'
@@ -166,19 +166,19 @@ Confusion-Matrix. \\
 \end{figure}
 
 Uns fallen zwei Dinge auf: Zunächst werden wenige Tokens tatsächlich verwendet, das ist allerdings nicht verwunderlich; sehr tiefe bzw. hohe Tonhöhen
-kommen in Musik (jeglicher Zeit) kaum vor. Diesen 'Beschränkung' hat auch unser Modell gelernt, ebenfalls dominiert die Hauptdiagonale die Vorhersagen
+kommen in Musik (jeglicher Zeit) kaum vor. Diese 'Beschränkung' hat auch unser Modell gelernt, ebenfalls dominiert die Hauptdiagonale die Vorhersagen
 deutlich, wir sagen also oft die korrekte Note vorher. Betrachtet man die Matrix genauer fallen die zwei symmetrischen Nebendiagonalen auf 
 (die untere beginnt bei etwa $(36, 48)$ und endet bei etwa $(66, 78)$), die Nebendiagonalen liegen also interessanterweise
  $\pm 12$ Token-IDs unter bzw. über der Hauptdiagonale. Das sind genau 12 Halbtonschritte, also eine Oktave! Die Vorhersage ist also in diesem Fall
  harmonisch korrekt, wenn auch im falschen Intervall. \\
  \autoref{fig:ferdi:model1_conf_mat2} zeigt ein nahezu identisches Bild. Zum einem bestätigt das die Robustheit des Modells, doch ergibt sich daraus
  auch eine ernüchternde Konsequenz, Beziehungen von Noten über lange Zeiten sind nicht vorhanden oder werden vom Modell nicht gelernt; doch gerade
- darin haben Transformer-Modell ihren Vorteil gegenüber anderer Methoden, siehe \cite{vaswani2017attention_ferdi}. Das ist vermutlich auch 
+ darin haben Transformer-Modelle ihren Vorteil gegenüber anderen Methoden, siehe \cite{vaswani2017attention_ferdi}. Das ist vermutlich auch 
  der Grund für die nahezu identische Leistung gegenüber RNNs. \\
- \autoref{fig:ferdi:in1}, \autoref{fig:ferdi:in2}, \autoref{fig:ferdi:in3} und  \autoref{fig:ferdi:in4} zeigt die Entwicklung der Confusion-Matrizen
+ \autoref{fig:ferdi:in1}, \autoref{fig:ferdi:in2}, \autoref{fig:ferdi:in3} und  \autoref{fig:ferdi:in4} zeigen die Entwicklung der Confusion-Matrizen
  mit länger werdender Input-Länge von $1, 2, 3, 4$. Zusammen mit \autoref{fig:ferdi:max_probs} bestätigen diese die Beobachtungen; ab einer 
- Input-Länge von 4 ist die Vorhersage des Modells praktisch fix, die Confusion-Matrix ist nahzu identisch zu den Matrizen mit Input-Länge von 32 und
- Input-Länge von 128. Das Modell profitiert also kaum von den Vorteilen der Transformerarchitektur.
+ Input-Länge von 4 ist die Vorhersage des Modells praktisch fix, die Confusion-Matrix ist nahezu identisch zu den Matrizen mit Input-Länge von 32 und
+ Input-Länge von 128. Das Modell profitiert also kaum von den Vorteilen der Transformer Architektur.
 \begin{figure}[htbp]
   \begin{subfigure}{1\textwidth} 
     \centering
