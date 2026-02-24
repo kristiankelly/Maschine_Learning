@@ -103,7 +103,7 @@ Mit diesen fünf Modellen haben wir eine Accuracy von knapp 40\% erreicht, was e
 Dennoch ist sie nicht besonders gut, was daran liegt, dass schon beim Einteilen in die verschiedenen Epochen nur eine Genauigkeit von 55\% erreicht wird. Somit wäre das dann auch die maximal mögliche Genauigkeit.
 
 
-\subsection{Klassifizieren mittels Support Vector Classification (SCV)}
+\subsection{Klassifizieren mittels Support Vector Classification (SVC)}
 In einem neuen Versuch verwenden wir anstatt des RandomForestClassifiers eine Support Vektor Maschine, mit welcher wir dann Klassifizieren (gennant auch SVC für Support Vector Classification).
 Bei der SVC werden die Objekte in Klassen unterteilt, wobei diese durch Vektoren im Vektorraum dargestellt werden. Der Algorithmus versucht dann, die Objekte durch Hyperebenen so zu trennen, dass der Abstand der Vektoren, welche
 am nächsten an der Hyperebene liegen maximiert wird. Gibt man dem Modell später neue unbekannte Daten, versucht es, diese in die vorgelernten Klassen einzuteilen, anhand der Trennlinien, die zuvor antrainiert wurden \parencite{SVM}.

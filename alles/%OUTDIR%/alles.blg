@@ -1,0 +1,19 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is '%OUTDIR%/alles.blg'
+[181] biber-MSWIN64:342> INFO - === 
+[242] Biber.pm:421> INFO - Reading '%OUTDIR%/alles.bcf'
+[451] Biber.pm:1002> INFO - Found 10 citekeys in bib section 0
+[482] Biber.pm:4487> INFO - Processing section 0
+[498] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[570] bibtex.pm:1713> INFO - LaTeX decoding ...
+[588] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[756] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[757] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[757] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'de-DE'
+[757] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[813] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[813] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[813] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'de-DE'
+[813] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[853] bbl.pm:676> INFO - Writing '%OUTDIR%/alles.bbl' with encoding 'UTF-8'
+[878] bbl.pm:779> INFO - Output to %OUTDIR%/alles.bbl

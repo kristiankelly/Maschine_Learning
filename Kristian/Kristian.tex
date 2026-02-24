@@ -48,10 +48,10 @@ wie strukturell für den Rest des Projekts verwenden werden, siehe Abbildung \re
 
 Wir heben folgende Dinge hervor:
 \begin{itemize}
-    \item Wir verwenden eine Embedding-Schicht, um die Notenwerte in einen dichteren Vektorraum (in diesem Fall $\mathbb{R}^{64}$) abzubilden, was dem Netzwerk helfen soll, siehe z.B. \parencite{chollet2021deep} 
+    \item Wir verwenden eine Embedding-Schicht, um die Notenwerte in einen dichteren Vektorraum (in diesem Fall $\mathbb{R}^{64}$) abzubilden, was dem Netzwerk helfen soll, siehe z.B. \cite{chollet2021learning_ferdi} 
     Kapitel 14. Es ist nämlich bei Noten wie bei Sprachen so, dass Noten, deren Abstände sehr kurz sind (z.B. C und C\#) nicht unbedingt eine ähnliche Bedeutungen/Wirkung haben.
           Somit muss das Netzwerk diese Beziehungen selbst lernen.
-    \item Wir verwenden zwei LSTM (Long Short-Term Memory) Zellen, welche sehr vereinfacht gesagt in der Lage sind, Langzeitabhängigkeiten in Sequenzen zu lernen, siehe z.B. \parencite{chollet2021deep} Kapitel 13 für eine ausführliche Beschreibung.
+    \item Wir verwenden zwei LSTM (Long Short-Term Memory) Zellen, welche sehr vereinfacht gesagt in der Lage sind, Langzeitabhängigkeiten in Sequenzen zu lernen, siehe z.B. \cite{chollet2021learning_ferdi} Kapitel 13 für eine ausführliche Beschreibung.
     \item Am Ende nehmen wir uns die letzten $N=4$ Ausgaben und leiten diese über eine Dense-Schicht mit Softmax-Aktivierung, um eine Wahrscheinlichkeitsverteilung über die möglichen Notenwerte zu erhalten. 
     Da die höchsten und tiefsten Notenwerte im Dataset nicht vorkommen, können wir auf 88 reduzieren, also die Tasten eines Klaviers.
 \end{itemize}

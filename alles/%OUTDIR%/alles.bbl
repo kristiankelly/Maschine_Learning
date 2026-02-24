@@ -1,0 +1,757 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{amon2005lexikon}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=585c71aadd44a42277fee32ecb4fff10}{%
+           family={Amon},
+           familyi={A\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{fullhash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{fullhashraw}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{bibnamehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authorbibnamehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authornamehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authorfullhash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authorfullhashraw}{585c71aadd44a42277fee32ecb4fff10}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lexikon der Harmonielehre: Nachschlagewerk zur durmolltonalen Harmonik mit Analysechiffren für Funktionen, Stufen und Jazz-Akkorde}
+      \field{year}{2005}
+    \endentry
+    \entry{chollet2021learning_ferdi}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning}%
+      }
+      \strng{namehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{fullhash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{fullhashraw}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{bibnamehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authorbibnamehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authornamehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authorfullhash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authorfullhashraw}{14134a39113404b1f80969c9ccc1f71e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep Learning with Python, Second Edition introduces the field of deep learning using Python and the powerful Keras library. In this revised and expanded new edition, Keras creator François Chollet offers insights for both novice and experienced machine learning practitioners. As you move through this book, you’ll build your understanding through intuitive explanations, crisp color illustrations, and clear examples. You’ll quickly pick up the skills you need to start developing deep-learning applications.}
+      \field{edition}{Second}
+      \field{isbn}{9781617296864}
+      \field{title}{Deep Learning with Python}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras
+      \endverb
+      \verb{url}
+      \verb https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras
+      \endverb
+      \keyw{68t07-artificial-neural-networks-and-deep-learning 68u10-image-processing keras tensorflow}
+    \endentry
+    \entry{SVM}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=802b5c87527a65937a04aa66f91a961c}{%
+           family={Lukas\bibnamedelima Exl},
+           familyi={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Sebastian\bibnamedelima Schaffner},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{fullhash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{fullhashraw}{802b5c87527a65937a04aa66f91a961c}
+      \strng{bibnamehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authorbibnamehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authornamehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authorfullhash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authorfullhashraw}{802b5c87527a65937a04aa66f91a961c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ML Skriptum}
+      \field{title}{Angewandtes Maschinelles Lernen}
+      \field{year}{2025}
+    \endentry
+    \entry{Musikepochen}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=43988671fc0cb3f9cb1e68191d986271}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Wieland},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Helbling Verlag}%
+      }
+      \strng{namehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{fullhash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{fullhashraw}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{bibnamehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authorbibnamehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authornamehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authorfullhash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authorfullhashraw}{43988671fc0cb3f9cb1e68191d986271}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Epochen der Musikgeschichte}
+      \field{year}{2020}
+    \endentry
+    \entry{RandomForestClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{1}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Random Forest}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+    \endentry
+    \entry{SupportVectorClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{2}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Support Vector Classification}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+    \endentry
+    \entry{midi_smf_wikibooks}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5bc7fcb45122e804003f17bc4f449f20}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{fullhash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{fullhashraw}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{bibnamehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authorbibnamehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authornamehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authorfullhash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authorfullhashraw}{5bc7fcb45122e804003f17bc4f449f20}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-01-07}
+      \field{title}{Standard MIDI File Format}
+      \field{year}{1997}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20120830211425/http://www.doc.ic.ac.uk/~nd/surprise_97/journal/vol1/aps2/
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20120830211425/http://www.doc.ic.ac.uk/~nd/surprise_97/journal/vol1/aps2/
+      \endverb
+    \endentry
+    \entry{tittel1959neue}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18ec8be6632d2c0c3f071f4125671cc3}{%
+           family={Tittel},
+           familyi={T\bibinitperiod},
+           given={Ernst},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Doblinger}%
+      }
+      \strng{namehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{fullhash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{fullhashraw}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{bibnamehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authorbibnamehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authornamehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authorfullhash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authorfullhashraw}{18ec8be6632d2c0c3f071f4125671cc3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Der neue Gradus: Textteil}
+      \field{volume}{1}
+      \field{year}{1959}
+    \endentry
+    \entry{vaswani2017attention_ferdi}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{fullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorbibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Attention is all you need}
+      \field{volume}{30}
+      \field{year}{2017}
+    \endentry
+    \entry{Dataset}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35b5a4c9729940d0782a11f9ae70ff24}{%
+           family={Vincentloos},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{fullhash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{fullhashraw}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{bibnamehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authorbibnamehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authornamehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authorfullhash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authorfullhashraw}{35b5a4c9729940d0782a11f9ae70ff24}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-14}
+      \field{title}{Classical Music MIDI as CSV}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.kaggle.com/datasets/vincentloos/classical-music-midi-as-csv?select=README.txt
+      \endverb
+      \verb{url}
+      \verb https://www.kaggle.com/datasets/vincentloos/classical-music-midi-as-csv?select=README.txt
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{amon2005lexikon}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=585c71aadd44a42277fee32ecb4fff10}{%
+           family={Amon},
+           familyi={A\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{fullhash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{fullhashraw}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{bibnamehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authorbibnamehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authornamehash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authorfullhash}{585c71aadd44a42277fee32ecb4fff10}
+      \strng{authorfullhashraw}{585c71aadd44a42277fee32ecb4fff10}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lexikon der Harmonielehre: Nachschlagewerk zur durmolltonalen Harmonik mit Analysechiffren für Funktionen, Stufen und Jazz-Akkorde}
+      \field{year}{2005}
+    \endentry
+    \entry{chollet2021learning_ferdi}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning}%
+      }
+      \strng{namehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{fullhash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{fullhashraw}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{bibnamehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authorbibnamehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authornamehash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authorfullhash}{14134a39113404b1f80969c9ccc1f71e}
+      \strng{authorfullhashraw}{14134a39113404b1f80969c9ccc1f71e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep Learning with Python, Second Edition introduces the field of deep learning using Python and the powerful Keras library. In this revised and expanded new edition, Keras creator François Chollet offers insights for both novice and experienced machine learning practitioners. As you move through this book, you’ll build your understanding through intuitive explanations, crisp color illustrations, and clear examples. You’ll quickly pick up the skills you need to start developing deep-learning applications.}
+      \field{edition}{Second}
+      \field{isbn}{9781617296864}
+      \field{title}{Deep Learning with Python}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras
+      \endverb
+      \verb{url}
+      \verb https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras
+      \endverb
+      \keyw{68t07-artificial-neural-networks-and-deep-learning 68u10-image-processing keras tensorflow}
+    \endentry
+    \entry{SVM}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=802b5c87527a65937a04aa66f91a961c}{%
+           family={Lukas\bibnamedelima Exl},
+           familyi={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Sebastian\bibnamedelima Schaffner},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{fullhash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{fullhashraw}{802b5c87527a65937a04aa66f91a961c}
+      \strng{bibnamehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authorbibnamehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authornamehash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authorfullhash}{802b5c87527a65937a04aa66f91a961c}
+      \strng{authorfullhashraw}{802b5c87527a65937a04aa66f91a961c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ML Skriptum}
+      \field{title}{Angewandtes Maschinelles Lernen}
+      \field{year}{2025}
+    \endentry
+    \entry{Musikepochen}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=43988671fc0cb3f9cb1e68191d986271}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Wieland},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Helbling Verlag}%
+      }
+      \strng{namehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{fullhash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{fullhashraw}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{bibnamehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authorbibnamehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authornamehash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authorfullhash}{43988671fc0cb3f9cb1e68191d986271}
+      \strng{authorfullhashraw}{43988671fc0cb3f9cb1e68191d986271}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Epochen der Musikgeschichte}
+      \field{year}{2020}
+    \endentry
+    \entry{RandomForestClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{1}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Random Forest}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+      \endverb
+    \endentry
+    \entry{SupportVectorClassifier}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{2}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-20}
+      \field{title}{Support Vector Classification}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+      \endverb
+    \endentry
+    \entry{midi_smf_wikibooks}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5bc7fcb45122e804003f17bc4f449f20}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{fullhash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{fullhashraw}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{bibnamehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authorbibnamehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authornamehash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authorfullhash}{5bc7fcb45122e804003f17bc4f449f20}
+      \strng{authorfullhashraw}{5bc7fcb45122e804003f17bc4f449f20}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-01-07}
+      \field{title}{Standard MIDI File Format}
+      \field{year}{1997}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20120830211425/http://www.doc.ic.ac.uk/~nd/surprise_97/journal/vol1/aps2/
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20120830211425/http://www.doc.ic.ac.uk/~nd/surprise_97/journal/vol1/aps2/
+      \endverb
+    \endentry
+    \entry{tittel1959neue}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18ec8be6632d2c0c3f071f4125671cc3}{%
+           family={Tittel},
+           familyi={T\bibinitperiod},
+           given={Ernst},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Doblinger}%
+      }
+      \strng{namehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{fullhash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{fullhashraw}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{bibnamehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authorbibnamehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authornamehash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authorfullhash}{18ec8be6632d2c0c3f071f4125671cc3}
+      \strng{authorfullhashraw}{18ec8be6632d2c0c3f071f4125671cc3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Der neue Gradus: Textteil}
+      \field{volume}{1}
+      \field{year}{1959}
+    \endentry
+    \entry{vaswani2017attention_ferdi}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{fullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorbibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Attention is all you need}
+      \field{volume}{30}
+      \field{year}{2017}
+    \endentry
+    \entry{Dataset}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35b5a4c9729940d0782a11f9ae70ff24}{%
+           family={Vincentloos},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{fullhash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{fullhashraw}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{bibnamehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authorbibnamehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authornamehash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authorfullhash}{35b5a4c9729940d0782a11f9ae70ff24}
+      \strng{authorfullhashraw}{35b5a4c9729940d0782a11f9ae70ff24}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-14}
+      \field{title}{Classical Music MIDI as CSV}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.kaggle.com/datasets/vincentloos/classical-music-midi-as-csv?select=README.txt
+      \endverb
+      \verb{url}
+      \verb https://www.kaggle.com/datasets/vincentloos/classical-music-midi-as-csv?select=README.txt
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
